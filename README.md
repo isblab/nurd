@@ -1,24 +1,24 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4584457.svg)](https://doi.org/10.5281/zenodo.4584457)
+[![DOI]()]()
 
 # Integrative model of the NuRD subcomplexes
 
 This repository is of the integrative model of the NuRD subcomplexes based on data from negative stain EM, chemical crosslinking, X-ray crystallography, DIA-MS, SEC-MALLS and [COSMIC](https://cancer.sanger.ac.uk/cosmic) (*Cancer Mutations Database*). It contains input data, scripts for modeling and results including bead models and localization probability density maps. The modeling was performed using [IMP](https://integrativemodeling.org) (*Integrative Modeling Platform*).
 
-## Directory structure:
+## Directory structure
 1. [inputs](inputs/) : contains the subdirectories for the input data used for modeling all the subcomplexes.
 2. [scripts](scripts/) : contains all the scripts used for modeling and analysis of the models.
 3. [results](results/) : contains the models and the localization probability densities of the top cluster of the subcomplexes .
 4. [test](test/) : scripts for testing the sampling
 
-## Protocol:
-### Simulations:
+### Simulations
 There are five independent simulations:
 1. Modeling of MHR subcomplex : `mhr`
 2. Modeling of MHM subcomplex : `mhm`
 3. Modeling of NuDe subcomplex : `nude`
 4. Modeling of MHR without using the EM data : `mhr_xl_ctrl`
 5. Modeling of MHM using a single copy of MBD3 : `mhm_ctrl`
----
+
+## Protocol
 ### Sampling
 To run the sampling, run modeling scripts like this \
 ```
@@ -36,7 +36,7 @@ and `NCORES` is the number of cores on which replica exchange is to be carried o
 3. For NuDe: ```SUBCOMPLEXNAME = nude```, ```NCORES = 8``` and ```NRUNS = 50 ```
 4. For MHR without using the EM data: ```SUBCOMPLEXNAME = mhr_xl_ctrl```, ```NCORES = 8``` and ```NRUNS = 30 ```
 5. For MHM with a single copy of MBD3: ```SUBCOMPLEXNAME = mhm_ctrl```, ```NCORES = 16``` and ```NRUNS = 35 ```
----
+
 
 ### Analysis
 #### 1. Getting the good scoring models
@@ -92,7 +92,7 @@ where, `*` is the name of the complex.
   3. Finally, COSMIC cancer mutations were annotated on the models as follows: \
       `python color_mutations/color_mutation.py -i cluster.0/cluster_center_model.rmf3 -r 10 -mf mutations.txt`
 
----
+
 ## Results
 
 For each of the simulations, the following files are in the [results](results/) directory
