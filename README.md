@@ -67,7 +67,7 @@ and `NCORES` is the number of cores on which replica exchange is to be carried o
 A separate directory named `sampcon` was created and a `density.txt` file was added to it. This file contains the details of the domains to be split for plotting the localisation probability densities. Finally, sampling exhaustiveness tests were performed using `imp-sampcon` as shown in `scripts/analysis/*_sampcon.sh`. \
 where, `*` is the name of the complex.
 
-#### Analysing the major cluster
+#### 3. Analysing the major cluster
   1. Crosslink violations were analyzed as follows: \
       `for xltype in adh bs3dss; do python get_xlink_viol_csv.py -c CLUSTER_NUMBER -m MODELANALYSIS_DIR -r modeling -k $xltype -t 35.0 & done` \
       and \
@@ -93,7 +93,7 @@ where, `*` is the name of the complex.
       `python color_mutations/color_mutation.py -i cluster.0/cluster_center_model.rmf3 -r 10 -mf mutations.txt`
 
 
-## Results
+### Results
 
 For each of the simulations, the following files are in the [results](results/) directory
 * `cluster_center_model.rmf3` : representative bead model of the major cluster
@@ -102,13 +102,13 @@ For each of the simulations, the following files are in the [results](results/) 
 
 For the NuDe models, `mutation_colored_model.rmf` and `Distance_Maps` are also added.
 
-## Information
+### Information
 **Author(s):** Shreyas Arvindekar, Shruthi Viswanath\
 **Date**: \
 **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
 International License.\
-**Last known good IMP version:** [![build info](https://integrativemodeling.org/systems/35/badge.svg?branch=main)](https://integrativemodeling.org/systems/) [![build info](https://integrativemodeling.org/systems/35/badge.svg?branch=develop)](https://integrativemodeling.org/systems/)\
+**Last known good IMP version:** [![build info](https://integrativemodeling.org/systems/35/badge.svg?branch=main)](https://integrativemodeling.org/systems/) \
 **Testable:** Yes\
 **Parallelizeable:** Yes\
 **Publications:** Submitted for publication
