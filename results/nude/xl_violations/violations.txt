@@ -1,0 +1,6 @@
+For xltype = adh
+Number of crosslinks violated in all models: 0
+For xltype = bs3dss
+Number of crosslinks violated in all models: 7
+For xltype = dmtmm
+Number of crosslinks violated in all models: 1

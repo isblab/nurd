@@ -1,0 +1,12 @@
+For xltype = inter_adh
+Number of crosslinks violated in all models: 0
+For xltype = inter_bs3dss
+Number of crosslinks violated in all models: 0
+For xltype = inter_dmtmm
+Number of crosslinks violated in all models: 0
+For xltype = intra_adh
+Number of crosslinks violated in all models: 0
+For xltype = intra_bs3dss
+Number of crosslinks violated in all models: 4
+For xltype = intra_dmtmm
+Number of crosslinks violated in all models: 0
