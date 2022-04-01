@@ -155,8 +155,11 @@ for mdl in model_indices:
     # print(f'{mdl_left} models left')
     (run,rep,frame) = model_ids[mdl]
 
-    stat_file_line_command = subprocess.Popen(["/home/shreyasarvindekar/imp-clean/build/setup_environment.sh","python","/home/shreyasarvindekar/imp-clean/imp/modules/pmi/pyext/src/process_output.py","-f",run_dirs+str(run)+"/stat."+str(rep)+".out","-n",str(frame+1)],stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+    stat_file_line_command = subprocess.Popen(["/home/shreyas/imp-clean/build/setup_environment.sh","python","/home/shreyas/imp-clean/imp/modules/pmi/pyext/src/process_output.py","-f",run_dirs+str(run)+"/stat."+str(rep)+".out","-n",str(frame+1)],stdout=subprocess.PIPE,stderr=subprocess.PIPE)
     frame_out,frame_err = stat_file_line_command.communicate()
+    if len(frame_err) != 0:
+        print(frame_err)
+        exit(1)
 
     # print(frame_out)
     # print(str(frame_err, 'utf-8'))
