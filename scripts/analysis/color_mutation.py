@@ -11,7 +11,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Get an RMF where beads of the cluster representative model are colored based on the mutation data provided")
     parser.add_argument('--input', '-i', dest="input", help='representative model in RMF format', default="cluster.0/cluster_center_model.rmf3")
     parser.add_argument('--resolution', '-r', dest="resolution", type=int, help='bead size (residues per bead) for annotating mutations. Must be same as the one used in input generation script', default=1)
-    parser.add_argument('--mutation_file','-mf',dest="mutation_file", required=True, type=str, help='location of mutations csv file')
+    parser.add_argument('--mutation_file','-mf',dest="mutation_file", required=True, type=str, help='location of mutations file e.g. all_beads_penalty.txt')
     parser.add_argument('--output', '-o', dest="output", help='mutation-colored model in RMF format.', default="mutation_colored_cluster_center_model.rmf3")
 
     return parser.parse_args()
@@ -62,7 +62,7 @@ if __name__ == '__main__':
             penalties_lst.append(int(ln.strip().split(',')[1]))
 
     white_color = (1.0,1.0,1.0)
-    grey_color = (0.6,0.6,0.6)                        # Decorate this new particle with XYZ coordinates and radius as in the old particle
+    grey_color = (0.6,0.6,0.6)                        
     very_lightred_color = (0.99, 0.6, 0.6)
 #     lightred_color = (1, 0.3, 0.3)
     red_color = (1,0,0)

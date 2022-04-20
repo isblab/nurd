@@ -188,19 +188,19 @@ num_violated_in_all_models = str(num_violated_in_all_models)
 print("Number of crosslinks violated in all models",num_violated_in_all_models)
 with open(viol_out_fname,'w') as xl_viol_file:
     xl_viol_file.write(f"For xltype = {args.k} \nNumber of crosslinks violated in all models: {num_violated_in_all_models} \n")
-#
-#
-# with open(out_fname,'w') as xl_out:
-#     for rst in Analysis.global_minimum_xlink_distances:
-        # xl_out.write(str(rst[0])+','+str(rst[1])+','+str(rst[2])+','+str(rst[3])+','+str(Analysis.global_minimum_xlink_distances[rst])+'\n')
-        # print(str(rst[0])+','+str(rst[1])+','+str(rst[2])+','+str(rst[3])+','+str(Analysis.global_minimum_xlink_distances[rst]))
+
+
+with open(out_fname,'w') as xl_out:
+    for rst in Analysis.global_minimum_xlink_distances:
+        xl_out.write(str(rst[0])+','+str(rst[1])+','+str(rst[2])+','+str(rst[3])+','+str(Analysis.global_minimum_xlink_distances[rst])+'\n')
+        print(str(rst[0])+','+str(rst[1])+','+str(rst[2])+','+str(rst[3])+','+str(Analysis.global_minimum_xlink_distances[rst]))
 
 
 
-with open(f'xlviol_percent_lst_{args.k}','w') as tf:
-    for entry in number_of_xls_violated_in_the_model:
-        tf.write(str(entry)+'\n')
-    tf.write('>'+str(total_xls))
+# with open(f'xlviol_percent_lst_{args.k}','w') as tf:
+#     for entry in number_of_xls_violated_in_the_model:
+#         tf.write(str(entry)+'\n')
+#     tf.write('>'+str(total_xls))
 
 # plt.figure()
 # plt.hist(percent_violated_in_each_model, bins=100, range=[0,50], color='#0095FF',histtype='step')

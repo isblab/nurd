@@ -12,7 +12,7 @@ from Bio.PDB import *
 ############################################# Inputs ##############################################
 ###################################################################################################
 
-input_file = '../cluster_center_model.rmf3'
+input_file = '../cluster.0/cluster_center_model.rmf3'
 # pdb_dir = 'pdb_files/pdbs/offset_corrected/offset_corrected_*'
 
 pdb_files = ['offset_corrected/offset_corrected_HDAC1-MTA1_ext.pdb',\
@@ -22,14 +22,14 @@ pdb_files = ['offset_corrected/offset_corrected_HDAC1-MTA1_ext.pdb',\
             'offset_corrected/offset_corrected_MTA1.1_1-164_BAH.pdb',\
             'offset_corrected/offset_corrected_MTA1.1_334-353_ns.pdb',\
             'offset_corrected/offset_corrected_MTA1.1_389-431_ZF.pdb',\
-            # 'offset_corrected/offset_corrected_RBBP4.0-MTA1_468-546_5FXY.pdb',\
-            # 'offset_corrected/offset_corrected_RBBP4.1-MTA1_468-546_5FXY.pdb',\
-            # 'offset_corrected/offset_corrected_RBBP4.2-MTA1_670-691_4PBZ.pdb',\
-            # 'offset_corrected/offset_corrected_RBBP4.3-MTA1_670-691_4PBZ.pdb',\
+            'offset_corrected/offset_corrected_RBBP4.0-MTA1_468-546_5FXY.pdb',\
+            'offset_corrected/offset_corrected_RBBP4.1-MTA1_468-546_5FXY.pdb',\
+            'offset_corrected/offset_corrected_RBBP4.2-MTA1_670-691_4PBZ.pdb',\
+            'offset_corrected/offset_corrected_RBBP4.3-MTA1_670-691_4PBZ.pdb',\
             'offset_corrected/offset_corrected_MBD3.0_1-71.pdb',\
-            'offset_corrected/offset_corrected_GATAD2B.0-Anumbers-MBD3-cc.pdb',\
-            'offset_corrected/offset_corrected_MBD3.1_1-71.pdb',\
-            'offset_corrected/offset_corrected_GATAD2B.1-Anumbers-MBD3-cc.pdb']
+            'offset_corrected/offset_corrected_GATAD2B.0-Anumbers-MBD3-cc.pdb'] #,\
+            # 'offset_corrected/offset_corrected_MBD3.1_1-71.pdb',\
+            # 'offset_corrected/offset_corrected_GATAD2B.1-Anumbers-MBD3-cc.pdb']
 
 
 # The all proteins list has the following architecture:
@@ -43,14 +43,14 @@ all_proteins = [{'MTA1':{'A':[0,range(165,334)]},'MTA1':{'C':[1,range(165,334)]}
             {'MTA1':{'J':[1,range(1,165)]}},\
             {'MTA1':{'A':[1,range(334,354)]}},\
             {'MTA1':{'A':[1,range(389,432)]}},\
-            # {'RBBP4':{'A':[0,range(10,412)]},'MTA1':{'B':[0,range(468,547)]}},\
-            # {'RBBP4':{'A':[1,range(10,412)]},'MTA1':{'B':[1,range(468,547)]}},\
-            # {'RBBP4':{'A':[2,range(2,412)]},'MTA1':{'B':[0,range(670,692)]}},\
-            # {'RBBP4':{'A':[3,range(2,412)]},'MTA1':{'B':[1,range(670,692)]}},\
+            {'RBBP4':{'A':[0,range(10,412)]},'MTA1':{'B':[0,range(468,547)]}},\
+            {'RBBP4':{'A':[1,range(10,412)]},'MTA1':{'B':[1,range(468,547)]}},\
+            {'RBBP4':{'A':[2,range(2,412)]},'MTA1':{'B':[0,range(670,692)]}},\
+            {'RBBP4':{'A':[3,range(2,412)]},'MTA1':{'B':[1,range(670,692)]}},\
             {'MBD3':{'A':[0,range(1,72)]}},\
-            {'MBD3':{'B':[0,range(221,250)]},'P66A':{'A':[0,range(137,179)]}},\
-            {'MBD3':{'A':[1,range(1,72)]}},\
-            {'MBD3':{'B':[1,range(221,250)]},'P66A':{'A':[1,range(137,179)]}}]
+            {'MBD3':{'B':[0,range(221,250)]},'P66A':{'A':[0,range(137,179)]}}] #,\
+            # {'MBD3':{'A':[1,range(1,72)]}},\
+            # {'MBD3':{'B':[1,range(221,250)]},'P66A':{'A':[1,range(137,179)]}}]
 
 
 # chains =
@@ -62,6 +62,7 @@ all_proteins = [{'MTA1':{'A':[0,range(165,334)]},'MTA1':{'C':[1,range(165,334)]}
 ###################################################################################################
 
 for file_index in range(len(pdb_files)):
+    print(f"Aligning: {pdb_files[file_index]}")
     pdb_file = pdb_files[file_index]
     proteins = all_proteins[file_index]
     # print(proteins)
@@ -86,7 +87,8 @@ for file_index in range(len(pdb_files)):
 
             sel_ca_pdb = IMP.atom.Selection(pdb_ca,resolution=1,chain_id=chain_id,residue_indexes=[i for i in proteins[prot][chain_id][1]]).get_selected_particles()
             sel_ccm = IMP.atom.Selection(hier,resolution=1,molecule=protein_name,copy_index=proteins[prot][chain_id][0],residue_indexes=[i for i in proteins[prot][chain_id][1]]).get_selected_particles()
-
+            print(len(sel_ca_pdb),len(sel_ccm))
+            print(protein_name, proteins[prot][chain_id][0], proteins[prot][chain_id][1])
             # print(len(sel_ccm),len(sel_ca_pdb))
             # Remove coarse grained beads
             new_ccm_sel = []

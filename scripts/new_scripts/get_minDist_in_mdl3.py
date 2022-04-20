@@ -20,25 +20,25 @@ structured_regions = {'MTA1':[('bah1','bah2',range(1,165)),('elmsant1','elmsant2
                             ('mta1r1','mta2r1',range(468,547)),('mta1r2','mta2r2',range(670,692))],\
                     'HDAC1':[('hdac1','hdac2',range(8,377))],\
                     'RBBP4':[('rbbp0','rbbp1','rbbp2','rbbp3',range(1,412))],\
-                    'MBD3':[('mbdmbd1','mbdmbd2',range(1,72)),('mbdcc1','mbdcc2',range(221,250))],\
-                    'P66A':[('gatacc1','gatacc2',range(137,179))]}
+                    'MBD3':[('mbdmbd1',range(1,72)),('mbdcc1',range(221,250))],\
+                    'P66A':[('gatacc1',range(137,179))]}
 
 
 model_ids = {'elmsant1':1,'elmsant2':1,'hdac1':1,'hdac2':1,\
              'bah1':2,\
-             'bah2':5,\
              'h1':3,\
-             'h2':6,\
              'zf1':4,\
+             'bah2':5,\
+             'h2':6,\
              'zf2':7,\
-             # 'mta1r1':8,'rbbp0':8,\
-             # 'mta2r1':9,'rbbp1':9,\
-             # 'mta1r2':10,'rbbp2':10,\
-             # 'mta2r2':11,'rbbp3':11,\
-             'mbdcc1':8,'gatacc1':8,\
-             'mbdcc2':9,'gatacc2':9,\
-             'mbdmbd1':10,\
-             'mbdmbd2':11}                                         # Chain name: model_id
+             'mta1r1':8,'rbbp0':8,\
+             'mta2r1':9,'rbbp1':9,\
+             'mta1r2':10,'rbbp2':10,\
+             'mta2r2':11,'rbbp3':11,\
+             'mbdmbd1':12,\
+             'mbdcc1':13,'gatacc1':13} #,\
+             # 'mbdmbd2':10,\
+             # 'mbdcc2':11,'gatacc2':11}                                         # Chain name: model_id
 
 __doc__ = "Get the minimum distance pair for each crosslink"
 
@@ -243,8 +243,7 @@ ccm_model_runid, ccm_model_replicaid, ccm_model_frameid = get_model_identity_fro
 print(f'For the cluster center model: \nrunID = {ccm_model_runid} \treplicaID = {ccm_model_replicaid} \tframeID = {ccm_model_frameid}\n')
 
 print('Reading the stat file')
-stat_file_line_command = subprocess.Popen(["/home/shreyasarvindekar/imp-clean/build/setup_environment.sh","python3","/home/shreyasarvindekar/imp-clean/imp/modules/pmi/pyext/src/process_output.py",\
-                                            "-f",args.run_dirs+'run_'+str(ccm_model_runid)+"/stat."+str(ccm_model_replicaid)+".out","-n",str(ccm_model_frameid)],\
+stat_file_line_command = subprocess.Popen(["/home/shreyas/imp-clean/build/setup_environment.sh","python","/home/shreyas/imp-clean/imp/modules/pmi/pyext/src/process_output.py","-f",args.run_dirs+'run_'+str(ccm_model_runid)+"/stat."+str(ccm_model_replicaid)+".out","-n",str(ccm_model_frameid)],\
                                             stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 # For the stat file line command, remember to remove the output dir when running for subcomplexes other than MHR.
 frame_out,frame_err = stat_file_line_command.communicate()
@@ -346,7 +345,23 @@ with open(pseudobond_fname,'w') as pbf:
 
 chimera_script_fname = 'pseudobond_chimera_script.py'
 with open(chimera_script_fname,'w') as csf:
-    csf.write(f"import glob\nimport chimera\nfrom chimera import openModels\nfrom chimera import runCommand\n\nmmcifs = {glob.glob(args.cif_dir+'/chainname_changed_aligned_offset_corrected_*.cif')}\n\
+    csf.write(f"import glob\nimport chimera\nfrom chimera import openModels\nfrom chimera import runCommand\n\n\
+mmcifs = ['{args.cif_dir}chainname_changed_aligned_offset_corrected_HDAC1-MTA1_ext.pdb.pdb.cif',\
+        '{args.cif_dir}chainname_changed_aligned_offset_corrected_MTA1.0_1-164_BAH.pdb.pdb.cif',\
+        '{args.cif_dir}chainname_changed_aligned_offset_corrected_MTA1.0_334-353_ns.pdb.pdb.cif',\
+        '{args.cif_dir}chainname_changed_aligned_offset_corrected_MTA1.0_389-431_ZF.pdb.pdb.cif',\
+        '{args.cif_dir}chainname_changed_aligned_offset_corrected_MTA1.1_1-164_BAH.pdb.pdb.cif',\
+        '{args.cif_dir}chainname_changed_aligned_offset_corrected_MTA1.1_334-353_ns.pdb.pdb.cif',\
+        '{args.cif_dir}chainname_changed_aligned_offset_corrected_MTA1.1_389-431_ZF.pdb.pdb.cif',\
+        # '{args.cif_dir}chainname_changed_aligned_offset_corrected_MBD3.1_1-71.pdb.pdb.cif',\
+        # '{args.cif_dir}chainname_changed_aligned_offset_corrected_GATAD2B.1-Anumbers-MBD3-cc.pdb.pdb.cif']\n\
+        '{args.cif_dir}chainname_changed_aligned_offset_corrected_RBBP4.0-MTA1_468-546_5FXY.pdb.pdb.cif',\
+        '{args.cif_dir}chainname_changed_aligned_offset_corrected_RBBP4.1-MTA1_468-546_5FXY.pdb.pdb.cif',\
+        '{args.cif_dir}chainname_changed_aligned_offset_corrected_RBBP4.2-MTA1_670-691_4PBZ.pdb.pdb.cif',\
+        '{args.cif_dir}chainname_changed_aligned_offset_corrected_RBBP4.3-MTA1_670-691_4PBZ.pdb.pdb.cif',\
+        '{args.cif_dir}chainname_changed_aligned_offset_corrected_MBD3.0_1-71.pdb.pdb.cif',\
+        '{args.cif_dir}chainname_changed_aligned_offset_corrected_GATAD2B.0-Anumbers-MBD3-cc.pdb.pdb.cif']\
+        \n\n\
 runCommand('open '+'multiscaling_striped_cluster_center_model.rmf3')\nfor p in mmcifs:\n\trunCommand('open '+p)")
 
 print('-------------------------------------------------------------------------------------------------------------------------\

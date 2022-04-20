@@ -156,7 +156,7 @@ for i in range(max_models):
 
 overall_xl_min_dist = {}
 violated_crosslinks = []
-with open('xlviol_validation_set.txt','w') as outf:
+with open(f"xlviol_validation_set_{(args.xlfile).split('/')[-1].split('.')[0]}.txt",'w') as outf:
     for key in xl_min_dist_a.keys():
         overall_xl_min_dist[key] = min(float(xl_min_dist_a[key]),float(xl_min_dist_b[key]))
         overall_min_dist = min(float(xl_min_dist_a[key]),float(xl_min_dist_b[key]))
@@ -168,7 +168,13 @@ with open('xlviol_validation_set.txt','w') as outf:
 n_violated = len(violated_crosslinks)
 percent_violated = (n_violated / len(val_xls)) * 100
 
-with open('xlviol_validation_set.log','w') as logf:
+with open(f"xlviol_validation_set_{(args.xlfile).split('/')[-1].split('.')[0]}.log",'w') as logf:
     log_str = f"Total number of crosslinks in the validation set are: {len(val_xls)}\nNumber of violated crosslinks from the validation set are: {n_violated}\nPercent \
 violation from the validation set is: {percent_violated}"
     logf.write(log_str)
+'''
+with open('all_xl_details.txt', 'w') as outf:
+    for entry in overall_xl_min_dist:
+        outstr = f"{entry} : {overall_xl_min_dist[entry]}\n"
+        outf.write(outstr)
+'''
