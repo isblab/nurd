@@ -4,11 +4,15 @@
 
 This repository is of the integrative model of the NuRD subcomplexes based on data from negative stain EM, chemical crosslinking, X-ray crystallography, DIA-MS, SEC-MALLS and [COSMIC](https://cancer.sanger.ac.uk/cosmic) (*Cancer Mutations Database*). It contains input data, scripts for modeling and results including bead models and localization probability density maps. The modeling was performed using [IMP](https://integrativemodeling.org) (*Integrative Modeling Platform*).
 
+![four_stage_figure](https://user-images.githubusercontent.com/8314735/165240737-c960c153-6af9-4014-9d76-32bc8c01cd03.png)
+
+
 ## Directory structure
 1. [inputs](inputs/) : contains the subdirectories for the input data used for modeling all the subcomplexes.
 2. [scripts](scripts/) : contains all the scripts used for modeling and analysis of the models.
 3. [results](results/) : contains the models and the localization probability densities of the top cluster of the subcomplexes .
 4. [test](test/) : scripts for testing the sampling
+
 
 ### Simulations
 There are five independent simulations:
