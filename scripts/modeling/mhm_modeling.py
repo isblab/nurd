@@ -35,20 +35,21 @@ if runType == "test":
 elif runType == "prod":
     num_frames = 20000
 
-max_shuffle_core = 25
+max_shuffle_core = 5
+max_rotation_core = 0.5238      # 30 degree
 max_shuffle_set2 = 75
-rex_max_temp = 2.4
+rex_max_temp = 1.5
 
 # Identify data files
-intra_adh_xl_data = "../../input/mhm/xlms/intra_filtered_out_adh_master.dat"
-intra_bs3dss_xl_data = "../../input/mhm/xlms/intra_filtered_out_bs3dss_master.dat"
-intra_dmtmm_xl_data = "../../input/mhm/xlms/intra_filtered_out_dmtmm_master.dat"
+# intra_adh_xl_data = "../input/xlms/intra_filtered_out_adh_master.dat"
+intra_bs3dss_xl_data = "../input/xlms/intra_filtered_bs3dss.dat"
+# intra_dmtmm_xl_data = "../input/xlms/intra_filtered_out_dmtmm_master.dat"
 
-inter_adh_xl_data = "../../input/mhm/xlms/inter_filtered_out_adh_master.dat"
-inter_bs3dss_xl_data = "../../input/mhm/xlms/inter_filtered_out_bs3dss_master.dat"
-inter_dmtmm_xl_data = "../../input/mhm/xlms/inter_filtered_out_dmtmm_master.dat"
+# inter_adh_xl_data = "../input/mhm/xlms/inter_filtered_out_adh_master.dat"
+inter_bs3dss_xl_data = "../input/xlms/inter_filtered_bs3dss.dat"
+# inter_dmtmm_xl_data = "../input/xlms/inter_filtered_out_dmtmm_master.dat"
 
-gmm_data = "../../input/mhm/gmm/emd_21382.gmm.50.txt"
+gmm_data = "../input/gmm/emd_21382.gmm.50.txt"
 
 # Restraint weights
 intra_xl_weight = 1.0
@@ -56,7 +57,7 @@ inter_xl_weight = 10.0
 em_weight = 1000.0
 
 # Topology File
-topology_file = "../../input/mhm/topology.txt"
+topology_file = "../input/topology.txt"
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # Here is where the work begins
@@ -252,24 +253,24 @@ xldbkc = IMP.pmi.io.crosslink.CrossLinkDataBaseKeywordsConverter()
 xldbkc.set_standard_keys()
 
 
-xldb_intra_adh = IMP.pmi.io.crosslink.CrossLinkDataBase()
-xldb_intra_adh.create_set_from_file(file_name=intra_adh_xl_data,
-                              converter=xldbkc)
-xlr_intra_adh = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
-                root_hier=root_hier,    # Must pass the root hierarchy to the system
-                CrossLinkDataBase=xldb_intra_adh, # The crosslink database.
-                length=25,              # The crosslinker plus side chain length
-                resolution=1,           # The resolution at which to evaluate the crosslink
-                slope=0.0001,          # This adds a linear term to the scoring function
-                label="intra_adh",                        #   to bias crosslinks towards each other
-                weight=intra_xl_weight)       # Scaling factor for the restraint score.
+# xldb_intra_adh = IMP.pmi.io.crosslink.CrossLinkDataBase()
+# xldb_intra_adh.create_set_from_file(file_name=intra_adh_xl_data,
+#                              converter=xldbkc)
+# xlr_intra_adh = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
+#                root_hier=root_hier,    # Must pass the root hierarchy to the system
+#                database=xldb_intra_adh, # The crosslink database.
+#                length=25,              # The crosslinker plus side chain length
+#                resolution=1,           # The resolution at which to evaluate the crosslink
+#                slope=0.0001,          # This adds a linear term to the scoring function
+#                label="intra_adh",                        #   to bias crosslinks towards each other
+#                weight=intra_xl_weight)       # Scaling factor for the restraint score.
 
 xldb_intra_bs3dss = IMP.pmi.io.crosslink.CrossLinkDataBase()
 xldb_intra_bs3dss.create_set_from_file(file_name=intra_bs3dss_xl_data,
                                  converter=xldbkc)
 xlr_intra_bs3dss = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
                 root_hier=root_hier,    # Must pass the root hierarchy to the system
-                CrossLinkDataBase=xldb_intra_bs3dss, # The crosslink database.
+                database=xldb_intra_bs3dss, # The crosslink database.
                 length=25,              # The crosslinker plus side chain length
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,           # This adds a linear term to the scoring function
@@ -277,17 +278,17 @@ xlr_intra_bs3dss = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryR
                 weight=intra_xl_weight)       # Scaling factor for the restraint score.
 
 
-xldb_intra_dmtmm = IMP.pmi.io.crosslink.CrossLinkDataBase()
-xldb_intra_dmtmm.create_set_from_file(file_name=intra_dmtmm_xl_data,
-                                converter=xldbkc)
-xlr_intra_dmtmm = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
-                root_hier=root_hier,    # Must pass the root hierarchy to the system
-                CrossLinkDataBase=xldb_intra_dmtmm, # The crosslink database.
-                length=16,              # The crosslinker plus side chain length
-                resolution=1,           # The resolution at which to evaluate the crosslink
-                slope=0.0001,           # This adds a linear term to the scoring function
-                label="intra_dmtmm",                        #   to bias crosslinks towards each other
-                weight=intra_xl_weight)       # Scaling factor for the restraint score.
+# xldb_intra_dmtmm = IMP.pmi.io.crosslink.CrossLinkDataBase()
+# xldb_intra_dmtmm.create_set_from_file(file_name=intra_dmtmm_xl_data,
+#                                 converter=xldbkc)
+# xlr_intra_dmtmm = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
+#                 root_hier=root_hier,    # Must pass the root hierarchy to the system
+#                 database=xldb_intra_dmtmm, # The crosslink database.
+#                 length=16,              # The crosslinker plus side chain length
+#                 resolution=1,           # The resolution at which to evaluate the crosslink
+#                 slope=0.0001,           # This adds a linear term to the scoring function
+#                 label="intra_dmtmm",                        #   to bias crosslinks towards each other
+#                 weight=intra_xl_weight)       # Scaling factor for the restraint score.
 
 
 ########## No inter-protein ADH crosslink available
@@ -309,7 +310,7 @@ xldb_inter_bs3dss.create_set_from_file(file_name=inter_bs3dss_xl_data,
                                  converter=xldbkc)
 xlr_inter_bs3dss = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
                 root_hier=root_hier,    # Must pass the root hierarchy to the system
-                CrossLinkDataBase=xldb_inter_bs3dss, # The crosslink database.
+                database=xldb_inter_bs3dss, # The crosslink database.
                 length=25,              # The crosslinker plus side chain length
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,           # This adds a linear term to the scoring function
@@ -317,24 +318,24 @@ xlr_inter_bs3dss = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryR
                 weight=inter_xl_weight)       # Scaling factor for the restraint score.
 
 
-xldb_inter_dmtmm = IMP.pmi.io.crosslink.CrossLinkDataBase()
-xldb_inter_dmtmm.create_set_from_file(file_name=inter_dmtmm_xl_data,
-                                converter=xldbkc)
-xlr_inter_dmtmm = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
-                root_hier=root_hier,    # Must pass the root hierarchy to the system
-                CrossLinkDataBase=xldb_inter_dmtmm, # The crosslink database.
-                length=16,              # The crosslinker plus side chain length
-                resolution=1,           # The resolution at which to evaluate the crosslink
-                slope=0.0001,           # This adds a linear term to the scoring function
-                label="inter_dmtmm",                        #   to bias crosslinks towards each other
-                weight=inter_xl_weight)       # Scaling factor for the restraint score.
+# xldb_inter_dmtmm = IMP.pmi.io.crosslink.CrossLinkDataBase()
+# xldb_inter_dmtmm.create_set_from_file(file_name=inter_dmtmm_xl_data,
+#                                 converter=xldbkc)
+# xlr_inter_dmtmm = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
+#                 root_hier=root_hier,    # Must pass the root hierarchy to the system
+#                 database=xldb_inter_dmtmm, # The crosslink database.
+#                 length=16,              # The crosslinker plus side chain length
+#                 resolution=1,           # The resolution at which to evaluate the crosslink
+#                 slope=0.0001,           # This adds a linear term to the scoring function
+#                 label="inter_dmtmm",                        #   to bias crosslinks towards each other
+#                 weight=inter_xl_weight)       # Scaling factor for the restraint score.
 
 
-output_objects.append(xlr_intra_adh)
+# output_objects.append(xlr_intra_adh)
 output_objects.append(xlr_intra_bs3dss)
-output_objects.append(xlr_intra_dmtmm)
+# output_objects.append(xlr_intra_dmtmm)
 output_objects.append(xlr_inter_bs3dss)
-output_objects.append(xlr_inter_dmtmm)
+# output_objects.append(xlr_inter_dmtmm)
 
 # No inter-protein ADH crosslink available
 # output_objects.append(xlr_inter_adh)
@@ -381,6 +382,7 @@ IMP.pmi.tools.shuffle_configuration(root_hier,
 
 IMP.pmi.tools.shuffle_configuration(root_hier,
                                     max_translation=max_shuffle_core,
+                                    max_rotation = max_rotation_core,
                                     excluded_rigid_bodies=fixed_set2)
                                     # hierarchies_included_in_collision=fixed_set2)
 # Shuffling randomizes the bead positions. It's good to
@@ -393,18 +395,18 @@ IMP.pmi.dof.DegreesOfFreedom.enable_all_movers(dof)
 # Now, add all of the other restraints to the scoring function to start sampling
 evr.add_to_model()
 emr.add_to_model()
-xlr_intra_adh.add_to_model()
+# xlr_intra_adh.add_to_model()
 xlr_intra_bs3dss.add_to_model()
-xlr_intra_dmtmm.add_to_model()
+# xlr_intra_dmtmm.add_to_model()
 xlr_inter_bs3dss.add_to_model()
-xlr_inter_dmtmm.add_to_model()
+# xlr_inter_dmtmm.add_to_model()
 
 print("Replica Exchange Maximum Temperature : " + str(rex_max_temp))
 
 # Run replica exchange Monte Carlo sampling
 rex=IMP.pmi.macros.ReplicaExchange0(mdl,
         root_hier=root_hier,                    # pass the root hierarchy
-        crosslink_restraints=[xlr_intra_adh,xlr_intra_bs3dss,xlr_intra_dmtmm,xlr_inter_bs3dss,xlr_inter_dmtmm],
+        crosslink_restraints=[xlr_intra_bs3dss, xlr_inter_bs3dss],
         # This allows viewing the crosslinks in Chimera. Also, there is not inter-protein ADH crosslink available. Hence it is not mentioned in this list
         monte_carlo_temperature = 1.0,
         replica_exchange_minimum_temperature = 1.0,

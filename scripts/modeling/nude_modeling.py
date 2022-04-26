@@ -40,9 +40,9 @@ max_shuffle_set2 = 50
 rex_max_temp = 2.4
 
 # Identify data files
-adh_xl_data = "../../input/nude/xlms/adh_master.dat"
-bs3dss_xl_data = "../../input/nude/xlms/bs3dss_master.dat"
-dmtmm_xl_data =  "../../input/nude/xlms/dmtmm_master.dat"
+adh_xl_data = "../input/xlms/filtered_adh.dat"
+bs3dss_xl_data = "../input/xlms/filtered_bs3dss.dat"
+dmtmm_xl_data =  "../input/xlms/filtered_dmtmm.dat"
 
 # intra_adh_xl_data = "./data/xlms/intra_filtered_out_adh_master.dat"
 # intra_bs3dss_xl_data = "./data/xlms/intra_filtered_out_bs3dss_master.dat"
@@ -52,7 +52,7 @@ dmtmm_xl_data =  "../../input/nude/xlms/dmtmm_master.dat"
 # inter_bs3dss_xl_data = "./data/xlms/inter_filtered_out_bs3dss_master.dat"
 # inter_dmtmm_xl_data = "./data/xlms/inter_filtered_out_dmtmm_master.dat"
 
-gmm_data = "../../input/nude/gmm/emd_22904.gmm.40.txt"
+gmm_data = "../input/gmm/emd_22904.gmm.40.txt"
 
 # Restraint weights
 intra_xl_weight = 1.0
@@ -61,7 +61,7 @@ xl_weight = 10
 em_weight = 1000.0
 
 # Topology File
-topology_file = "../../input/nude/topology.txt"
+topology_file = "../input/topology.txt"
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # Here is where the work begins
@@ -262,7 +262,7 @@ xldb_adh.create_set_from_file(file_name=adh_xl_data,
                               converter=xldbkc)
 xlr_adh = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
                 root_hier=root_hier,    # Must pass the root hierarchy to the system
-                CrossLinkDataBase=xldb_adh, # The crosslink database.
+                database=xldb_adh, # The crosslink database.
                 length=25,              # The crosslinker plus side chain length
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,          # This adds a linear term to the scoring function
@@ -274,7 +274,7 @@ xldb_bs3dss.create_set_from_file(file_name=bs3dss_xl_data,
                                  converter=xldbkc)
 xlr_bs3dss = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
                 root_hier=root_hier,    # Must pass the root hierarchy to the system
-                CrossLinkDataBase=xldb_bs3dss, # The crosslink database.
+                database=xldb_bs3dss, # The crosslink database.
                 length=25,              # The crosslinker plus side chain length
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,           # This adds a linear term to the scoring function
@@ -287,7 +287,7 @@ xldb_dmtmm.create_set_from_file(file_name=dmtmm_xl_data,
                                 converter=xldbkc)
 xlr_dmtmm = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
                 root_hier=root_hier,    # Must pass the root hierarchy to the system
-                CrossLinkDataBase=xldb_dmtmm, # The crosslink database.
+                database=xldb_dmtmm, # The crosslink database.
                 length=16,              # The crosslinker plus side chain length
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,           # This adds a linear term to the scoring function
