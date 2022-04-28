@@ -1,4 +1,4 @@
-[DOI](https://doi.org/10.1101/2021.11.25.469965) 
+[DOI](https://doi.org/10.1101/2021.11.25.469965)
 
 # Integrative model of the NuRD subcomplexes
 
@@ -49,26 +49,26 @@ and `NCORES` is the number of cores on which replica exchange is to be carried o
       `$IMP run_analysis_trajectories.py modeling run_ `\
       where, `$IMP` is the setup script corresponding to the IMP installation directory (omit for binary installation), \
       `modeling` is the directory containing all the runs and \
-      `run_` is the prefix for the names of individual run directories.
+      `run_` is the prefix for the names of individual run directories.\
+      Alternatively, one can also run the `submit_run_analysis_trajectories.sh` script from the `scripts/analysis/pmi_analysis` directory\
 
-  2. Copy the selected_models_*_cluster`N`_detailed.csv files for `N = major cluster` into a separate directory named `gsm_sel`.
-
-  3. Then run `variable_filter_v1.py` on the major cluster obtained as follows: \
-      `$IMP variable_filter_v1.py -c N -g GSM_SEL_DIR`
+  2. Then run `variable_filter_v1.py` on the major cluster obtained as follows: \
+      `$IMP variable_filter_v1.py -c N -g MODEL_ANALYSIS_DIR`
       where, `$IMP` is the setup script corresponding to the IMP installation directory (omit for binary installation), \
       `N` is the cluster number of the major cluster, \
-      `GSM_SEL_DIR` is the location of the gsm_sel directory. \
+      `MODEL_ANALYSIS_DIR` is the location of the directory containing the selected_models*.csv. \
+      This can also be run using the `submit_variable_filter_v1.sh` script from the `scripts/analysis/pmi_analysis` directory.\
   _Please also refer to the comments in the `variable_filter_v1.py` for more details._ \
-  Copy the files given out by the variable filter to the `model_analysis` directory.
 
   4. The selected good scoring models were then extracted using `run_extract_good_scoring_models.py` as follows: \
       `$IMP python run_extract_good_scoring_models.py modeling run_ CLUSTER_NUMBER` \
       where, `$IMP` is the setup script corresponding to the IMP installation directory (omit for binary installation), \
       `modeling` is the path to the directory containing all the individual runs and \
-      `CLUSTER_NUMBER` is the number of the major cluster to be extracted.
+      `CLUSTER_NUMBER` is the number of the major cluster to be extracted.\
+      This can also be run using the script `submit_run_extract_models.sh` from the `scripts/analysis/pmi_analysis` directory.\
 
 #### 2. Running the sampling exhaustiveness tests (Sampcon)
-A separate directory named `sampcon` was created and a `density.txt` file was added to it. This file contains the details of the domains to be split for plotting the localisation probability densities. Finally, sampling exhaustiveness tests were performed using `imp-sampcon` as shown in `scripts/analysis/*_sampcon.sh`. \
+A separate directory named `sampcon` was created and a `density.txt` file was added to it. This file contains the details of the domains to be split for plotting the localisation probability densities. Finally, sampling exhaustiveness tests were performed using `imp-sampcon` as shown in `scripts/analysis/pmi_analysis/*_sampcon.sh`. \
 where, `*` is the name of the complex.
 
 #### 3. Analysing the major cluster
@@ -76,6 +76,9 @@ where, `*` is the name of the complex.
       `for xltype in adh bs3dss; do python get_xlink_viol_csv.py -c CLUSTER_NUMBER -m MODELANALYSIS_DIR -r modeling -k $xltype -t 35.0 & done` \
       and \
       `python get_xlink_viol_csv.py -c CLUSTER_NUMBER -m MODELANALYSIS_DIR -r modeling -k dmtmm -t 25.0` \
+      One acn also use the `get_xl_viol_validation_set.py` script from the `scripts/analysis/xlviol` directory after changing the inputs section in the script as follows: \
+      `$imp python get_xl_viol_validation_set.py -ia ../cluster.0.sample_A.txt -ib ../cluster.0.sample_B.txt -ra ../../MODEL_ANALYSIS_DIR/A_gsm_clust0.rmf3 -rb ../../MODEL_ANALYSIS_DIR/B_gsm_clust0.rmf3 -ta -ra ../../MODEL_ANALYSIS_DIR/A_gsm_clust0.txt -c ../cluster.0/cluster_center_model.rmf3 -x XL_FILE -t THRESHOLD` \
+      where, `XL_FILE` is a file containing the crosslinks to be analysed.
 
   2. The above scripts generate files mentioning the minimum distance for each crosslink. These files were then passed to `xl_distance_hist_plotter.py` as follows: \
      `python xl_distance_hist_plotter.py FILE_NAME XL_NAME THRESHOLD` \
@@ -84,14 +87,14 @@ where, `*` is the name of the complex.
      `THRESHOLD` is the distance threshold for that linker. \
      This script will generate a histogram of the minimum distances spanned by the crosslinks.
 
-  3. Then, the files obtained from `get_xlink_viol_csv.py` were passed to `binner_cx-circos.py`as follows: \
+  3. Then, the files obtained from scripts in point 1 were passed to `binner_cx-circos.py`as follows: \
      `python binner_cx-circos.py FILE_NAME` \
      where, `FILE_NAME` is the name of the file. \
      This script generates a binned version of the input file which can then be used to make the crosslink plots using [CIRCOS](http://cx-circos.net/).
 
   4. Contact maps were plotted for the NuDe models as follows:
-      `$IMP python contact_maps_all_pairs_surface.py -ia cluster.0.sample_A.txt -ib cluster.0.sample_B.txt -ra model_analysis/A_gsm_clust0.rmf3 -rb model_analysis/B_gsm_clust0.rmf3 -c sampcon/cluster.0/cluster_center_model.rmf3 -ta model_analysis/A_gsm_clust0.txt` \
-      _Please use `--help` for this script for more details._
+      `scripts/analysis/cosmic_and_distance-maps/submit_contact_maps_all_pairs_surface.py` \
+      This script calls the `scripts/analysis/cosmic_and_distance-maps/contact_maps_all_pairs_surface.py` script._Please use `--help` for `contact_maps_all_pairs_surface.py` script for more details._
 
   3. Finally, COSMIC cancer mutations were annotated on the models as follows: \
       `python color_mutations/color_mutation.py -i cluster.0/cluster_center_model.rmf3 -r 10 -mf mutations.txt`
