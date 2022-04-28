@@ -1,0 +1,1 @@
+$imp python  ~/imp-clean/imp/modules/sampcon/pyext/src/exhaust.py -n mtan-hdac-mbd-gata -a -m cpu_omp -c 28 -d ../density.txt -gp -g 5.0  -sa ../model_analysis/A_gsm_clust2.txt -sb ../model_analysis/B_gsm_clust2.txt  -ra ../model_analysis/A_gsm_clust2.rmf3 -rb ../model_analysis/B_gsm_clust2.rmf3
