@@ -50,7 +50,7 @@ and `NCORES` is the number of cores on which replica exchange is to be carried o
       where, `$IMP` is the setup script corresponding to the IMP installation directory (omit for binary installation), \
       `modeling` is the directory containing all the runs and \
       `run_` is the prefix for the names of individual run directories.\
-      Alternatively, one can also run the `submit_run_analysis_trajectories.sh` script from the `scripts/analysis/pmi_analysis` directory\
+      Alternatively, one can also run the `submit_run_analysis_trajectories.sh` script from the `scripts/analysis/pmi_analysis` directory
 
   2. Then run `variable_filter_v1.py` on the major cluster obtained as follows: \
       `$IMP variable_filter_v1.py -c N -g MODEL_ANALYSIS_DIR`
@@ -60,12 +60,12 @@ and `NCORES` is the number of cores on which replica exchange is to be carried o
       This can also be run using the `submit_variable_filter_v1.sh` script from the `scripts/analysis/pmi_analysis` directory.\
   _Please also refer to the comments in the `variable_filter_v1.py` for more details._ 
 
-  4. The selected good scoring models were then extracted using `run_extract_good_scoring_models.py` as follows: \
+  3. The selected good scoring models were then extracted using `run_extract_good_scoring_models.py` as follows: \
       `$IMP python run_extract_good_scoring_models.py modeling run_ CLUSTER_NUMBER` \
       where, `$IMP` is the setup script corresponding to the IMP installation directory (omit for binary installation), \
       `modeling` is the path to the directory containing all the individual runs and \
       `CLUSTER_NUMBER` is the number of the major cluster to be extracted.\
-      This can also be run using the script `submit_run_extract_models.sh` from the `scripts/analysis/pmi_analysis` directory.\
+      This can also be run using the script `submit_run_extract_models.sh` from the `scripts/analysis/pmi_analysis` directory.
 
 #### 2. Running the sampling exhaustiveness tests (Sampcon)
 A separate directory named `sampcon` was created and a `density.txt` file was added to it. This file contains the details of the domains to be split for plotting the localisation probability densities. Finally, sampling exhaustiveness tests were performed using `imp-sampcon` as shown in `scripts/analysis/pmi_analysis/*_sampcon.sh`. \
