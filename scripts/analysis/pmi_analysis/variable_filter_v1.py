@@ -18,7 +18,7 @@ import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 from tabulate import tabulate
-sys.path.append('/home/shreyasarvindekar/imp-clean/imp/modules/sampcon/pyext/src')
+sys.path.append('/home/shreyas/imp-clean/imp/modules/sampcon/pyext/src')
 import scores_convergence
 
 
@@ -145,6 +145,7 @@ if mult_found == True:
         outf.write(f'\n\nOptimal filter found.\nExtracted at {multiplier}')
 
     nBins = int(max(scores) - min(scores))
+    print(nBins)
     plt.figure()
     plt.hist(scoresA, bins=nBins, histtype='step', label='ScoresA')
     plt.hist(scoresB, bins=nBins, histtype='step', label='ScoresB')
