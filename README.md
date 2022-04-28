@@ -15,12 +15,11 @@ This repository is of the integrative model of the NuRD subcomplexes based on da
 
 
 ### Simulations
-There are five independent simulations:
+These are the independent simulations:
 1. Modeling of MHR subcomplex : `mhr`
 2. Modeling of MHM subcomplex : `mhm`
 3. Modeling of NuDe subcomplex : `nude`
-4. Modeling of MHR without using the EM data : `mhr_xl_ctrl`
-5. Modeling of MHM using a single copy of MBD3 : `mhm_ctrl`
+4. Modeling of MHR without using the EM data : `mhr_xl_ctrl` 
 
 ## Protocol
 ### Sampling
@@ -31,15 +30,14 @@ for runid in `seq 1 NRUNS` ; do mpirun -np NCORES $IMP python scripts/sample/SUB
 
 where, \
 `$IMP` is the setup script corresponding to the IMP installation directory (omit for binary installation), \
-`SUBCOMPLEXNAME` is `mhr`, `mhm`, `nude`, `mhr_ctrl` or `mhm_ctrl` \
+`SUBCOMPLEXNAME` is `mhr`, `mhm`, `nude`, `mhr_ctrl`   \
 `NRUNS` is the number of runs, \
 and `NCORES` is the number of cores on which replica exchange is to be carried out.
 
 1. For MHR: ```SUBCOMPLEXNAME = mhr```, ```NCORES = 8``` and ```NRUNS = 50 ```
 2. For MHM: ```SUBCOMPLEXNAME = mhm```, ```NCORES = 8``` and ```NRUNS = 30 ```
 3. For NuDe: ```SUBCOMPLEXNAME = nude```, ```NCORES = 8``` and ```NRUNS = 50 ```
-4. For MHR without using the EM data: ```SUBCOMPLEXNAME = mhr_xl_ctrl```, ```NCORES = 8``` and ```NRUNS = 30 ```
-5. For MHM with a single copy of MBD3: ```SUBCOMPLEXNAME = mhm_ctrl```, ```NCORES = 16``` and ```NRUNS = 35 ```
+4. For MHR without using the EM data: ```SUBCOMPLEXNAME = mhr_xl_ctrl```, ```NCORES = 8``` and ```NRUNS = 30 ``` 
 
 
 ### Analysis
@@ -94,7 +92,8 @@ where, `*` is the name of the complex.
 
   4. Contact maps were plotted for the NuDe models as follows:
       `scripts/analysis/cosmic_and_distance-maps/submit_contact_maps_all_pairs_surface.py` \
-      This script calls the `scripts/analysis/cosmic_and_distance-maps/contact_maps_all_pairs_surface.py` script._Please use `--help` for `contact_maps_all_pairs_surface.py` script for more details._
+      This script calls the `scripts/analysis/cosmic_and_distance-maps/contact_maps_all_pairs_surface.py` script.
+      _Please use `--help` for `contact_maps_all_pairs_surface.py` script for more details._
 
   3. Finally, COSMIC cancer mutations were annotated on the models as follows: \
       `python color_mutations/color_mutation.py -i cluster.0/cluster_center_model.rmf3 -r 10 -mf mutations.txt`
