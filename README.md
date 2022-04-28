@@ -58,7 +58,7 @@ and `NCORES` is the number of cores on which replica exchange is to be carried o
       `N` is the cluster number of the major cluster, \
       `MODEL_ANALYSIS_DIR` is the location of the directory containing the selected_models*.csv. \
       This can also be run using the `submit_variable_filter_v1.sh` script from the `scripts/analysis/pmi_analysis` directory.\
-  _Please also refer to the comments in the `variable_filter_v1.py` for more details._ \
+  _Please also refer to the comments in the `variable_filter_v1.py` for more details._ 
 
   4. The selected good scoring models were then extracted using `run_extract_good_scoring_models.py` as follows: \
       `$IMP python run_extract_good_scoring_models.py modeling run_ CLUSTER_NUMBER` \
