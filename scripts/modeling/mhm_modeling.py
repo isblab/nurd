@@ -31,7 +31,7 @@ runID = sys.argv[2]   # Specify the number of runs
 run_output_dir = 'run_' + str(runID)
 
 if runType == "test":
-    num_frames = 5000
+    num_frames = 5
 elif runType == "prod":
     num_frames = 20000
 
@@ -42,14 +42,14 @@ rex_max_temp = 1.5
 
 # Identify data files
 # intra_adh_xl_data = "../input/xlms/intra_filtered_out_adh_master.dat"
-intra_bs3dss_xl_data = "../input/xlms/intra_filtered_bs3dss.dat"
+intra_bs3dss_xl_data = "../../input/mhm/xlms/intra_filtered_bs3dss.dat"
 # intra_dmtmm_xl_data = "../input/xlms/intra_filtered_out_dmtmm_master.dat"
 
 # inter_adh_xl_data = "../input/mhm/xlms/inter_filtered_out_adh_master.dat"
-inter_bs3dss_xl_data = "../input/xlms/inter_filtered_bs3dss.dat"
+inter_bs3dss_xl_data = "../../input/mhm/xlms/inter_filtered_bs3dss.dat"
 # inter_dmtmm_xl_data = "../input/xlms/inter_filtered_out_dmtmm_master.dat"
 
-gmm_data = "../input/gmm/emd_21382.gmm.50.txt"
+gmm_data = "../../input/mhm/gmm/emd_21382.gmm.50.txt"
 
 # Restraint weights
 intra_xl_weight = 1.0
@@ -57,7 +57,7 @@ inter_xl_weight = 10.0
 em_weight = 1000.0
 
 # Topology File
-topology_file = "../input/topology.txt"
+topology_file = "../../input/mhm/topology.txt"
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # Here is where the work begins

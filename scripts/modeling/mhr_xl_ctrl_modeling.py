@@ -32,11 +32,11 @@ runID = sys.argv[2] # Specify the run number
 run_output_dir = 'run_' + str(runID)
 
 if runType == "test":
-    num_frames = 5000
+    num_frames = 5
 elif runType == "prod":
     num_frames = 20000
 
-rex_max_temp = 1.8 
+rex_max_temp = 1.8
 
 # Identify data files
 #saxs_data = "./derived_data/saxs/4pki.pdb.0.15.dat"
@@ -208,7 +208,7 @@ xldb_adh.create_set_from_file(file_name=adh_xl_data,
                               converter=xldbkc)
 xlr_adh = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
                 root_hier=root_hier,    # Must pass the root hierarchy to the system
-                CrossLinkDataBase=xldb_adh, # The crosslink database.
+                database=xldb_adh, # The crosslink database.
                 length=25,              # The crosslinker plus side chain length
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,          # This adds a linear term to the scoring function
@@ -220,7 +220,7 @@ xldb_bs3dss.create_set_from_file(file_name=bs3dss_xl_data,
                                  converter=xldbkc)
 xlr_bs3dss = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
                 root_hier=root_hier,    # Must pass the root hierarchy to the system
-                CrossLinkDataBase=xldb_bs3dss, # The crosslink database.
+                database=xldb_bs3dss, # The crosslink database.
                 length=25,              # The crosslinker plus side chain length
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,           # This adds a linear term to the scoring function
@@ -233,7 +233,7 @@ xldb_dmtmm.create_set_from_file(file_name=dmtmm_xl_data,
                                 converter=xldbkc)
 xlr_dmtmm = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
                 root_hier=root_hier,    # Must pass the root hierarchy to the system
-                CrossLinkDataBase=xldb_dmtmm, # The crosslink database.
+                database=xldb_dmtmm, # The crosslink database.
                 length=16,              # The crosslinker plus side chain length
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,           # This adds a linear term to the scoring function

@@ -31,7 +31,7 @@ runID = sys.argv[2]   # Specify the number of runs
 run_output_dir = 'run_' + str(runID)
 
 if runType == "test":
-    num_frames = 5000
+    num_frames = 5
 elif runType == "prod":
     num_frames = 20000
 
@@ -40,9 +40,9 @@ max_shuffle_set2 = 50
 rex_max_temp = 2.4
 
 # Identify data files
-adh_xl_data = "../input/xlms/filtered_adh.dat"
-bs3dss_xl_data = "../input/xlms/filtered_bs3dss.dat"
-dmtmm_xl_data =  "../input/xlms/filtered_dmtmm.dat"
+adh_xl_data = "../../input/nude/xlms/filtered_adh.dat"
+bs3dss_xl_data = "../../input/nude/xlms/filtered_bs3dss.dat"
+dmtmm_xl_data =  "../../input/nude/xlms/filtered_dmtmm.dat"
 
 # intra_adh_xl_data = "./data/xlms/intra_filtered_out_adh_master.dat"
 # intra_bs3dss_xl_data = "./data/xlms/intra_filtered_out_bs3dss_master.dat"
@@ -52,7 +52,7 @@ dmtmm_xl_data =  "../input/xlms/filtered_dmtmm.dat"
 # inter_bs3dss_xl_data = "./data/xlms/inter_filtered_out_bs3dss_master.dat"
 # inter_dmtmm_xl_data = "./data/xlms/inter_filtered_out_dmtmm_master.dat"
 
-gmm_data = "../input/gmm/emd_22904.gmm.40.txt"
+gmm_data = "../../input/nude/gmm/emd_22904.gmm.40.txt"
 
 # Restraint weights
 intra_xl_weight = 1.0
@@ -61,7 +61,7 @@ xl_weight = 10
 em_weight = 1000.0
 
 # Topology File
-topology_file = "../input/topology.txt"
+topology_file = "../../input/nude/topology.txt"
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # Here is where the work begins
