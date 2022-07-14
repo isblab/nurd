@@ -117,4 +117,4 @@ International License.\
 **Last known good IMP version:** [![build info](https://integrativemodeling.org/systems/35/badge.svg?branch=main)](https://integrativemodeling.org/systems/) \
 **Testable:** Yes\
 **Parallelizeable:** Yes\
-**Publications:** Submitted for publication (bioRxiv [DOI](https://doi.org/10.1101/2021.11.25.469965))
+**Publications:** Submitted for publication ([bioRxiv](https://doi.org/10.1101/2021.11.25.469965))
