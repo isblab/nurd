@@ -1,4 +1,4 @@
-[DOI](https://doi.org/10.1101/2021.11.25.469965)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6674232.svg)](https://doi.org/10.5281/zenodo.6674232)
 
 # Integrative model of the NuRD subcomplexes
 
@@ -19,7 +19,7 @@ These are the independent simulations:
 1. Modeling of MHR subcomplex : `mhr`
 2. Modeling of MHM subcomplex : `mhm`
 3. Modeling of NuDe subcomplex : `nude`
-4. Modeling of MHR without using the EM data : `mhr_xl_ctrl` 
+4. Modeling of MHR without using the EM data : `mhr_xl_ctrl`
 
 ## Protocol
 ### Sampling
@@ -37,7 +37,7 @@ and `NCORES` is the number of cores on which replica exchange is to be carried o
 1. For MHR: ```SUBCOMPLEXNAME = mhr```, ```NCORES = 8``` and ```NRUNS = 50 ```
 2. For MHM: ```SUBCOMPLEXNAME = mhm```, ```NCORES = 8``` and ```NRUNS = 30 ```
 3. For NuDe: ```SUBCOMPLEXNAME = nude```, ```NCORES = 8``` and ```NRUNS = 50 ```
-4. For MHR without using the EM data: ```SUBCOMPLEXNAME = mhr_xl_ctrl```, ```NCORES = 8``` and ```NRUNS = 30 ``` 
+4. For MHR without using the EM data: ```SUBCOMPLEXNAME = mhr_xl_ctrl```, ```NCORES = 8``` and ```NRUNS = 30 ```
 
 
 ### Analysis
@@ -56,7 +56,7 @@ and `NCORES` is the number of cores on which replica exchange is to be carried o
       `N` is the cluster number of the major cluster, \
       `MODEL_ANALYSIS_DIR` is the location of the directory containing the selected_models*.csv. \
       This can also be run using the `submit_variable_filter_v1.sh` script from the `scripts/analysis/pmi_analysis` directory.\
-  _Please also refer to the comments in the `variable_filter_v1.py` for more details._ 
+  _Please also refer to the comments in the `variable_filter_v1.py` for more details._
 
   3. The selected good scoring models were then extracted using `run_extract_good_scoring_models.py` as follows: \
       `$IMP python run_extract_good_scoring_models.py modeling run_ CLUSTER_NUMBER` \
@@ -110,11 +110,11 @@ For the NuDe models, `mutation_colored_model.rmf` and `Distance_Maps` are also a
 
 ### Information
 **Author(s):** Shreyas Arvindekar, Shruthi Viswanath\
-**Date**: \
+**Date**: May 19th, 2022\
 **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
 International License.\
 **Last known good IMP version:** [![build info](https://integrativemodeling.org/systems/35/badge.svg?branch=main)](https://integrativemodeling.org/systems/) \
 **Testable:** Yes\
 **Parallelizeable:** Yes\
-**Publications:** Submitted for publication
+**Publications:** Submitted for publication (bioRxiv [DOI](https://doi.org/10.1101/2021.11.25.469965))
