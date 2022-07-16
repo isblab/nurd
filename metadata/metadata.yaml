@@ -1,5 +1,5 @@
 title: NuRD subcomplexes
-tags: [X-ray, NMR, SEC-MALLS, chemical crosslinks, cryo-EM, COSMIC]
+tags: [X-ray, NMR, SEC-MALLS, chemical crosslinks, cryo-EM, COSMIC, PMI, ]
 pmid:
 accessions:
 prereqs: [python/scikit, python/matplotlib, python/numpy]
