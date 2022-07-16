@@ -15,7 +15,7 @@ class Tests(unittest.TestCase):
             shutil.rmtree('output')
         if os.path.exists('run_test'):
             shutil.rmtree('run_test')
-        p = subprocess.check_call(["/home/shreyas/imp-clean/build/setup_environment.sh", "python", "mhr_modeling.py", "test", "mhr-test"])
+        p = subprocess.check_call(["python", "mhr_modeling.py", "test", "mhr-test"])
 
         # require that the number of frames is present
         total_num_lines_stat_files = 0
@@ -37,7 +37,7 @@ class Tests(unittest.TestCase):
         if os.path.exists('output'):
             shutil.rmtree('output')
 
-        p = subprocess.check_call(["/home/shreyas/imp-clean/build/setup_environment.sh", "python", "mhm_modeling.py", "test", "mhm-test"])
+        p = subprocess.check_call(["python", "mhm_modeling.py", "test", "mhm-test"])
 
         # require that the number of frames is present
         total_num_lines_stat_files = 0
@@ -59,7 +59,7 @@ class Tests(unittest.TestCase):
         if os.path.exists('output'):
             shutil.rmtree('output')
 
-        p = subprocess.check_call(["/home/shreyas/imp-clean/build/setup_environment.sh", "python", "nude_modeling.py", "test", "nude-test"])
+        p = subprocess.check_call(["python", "nude_modeling.py", "test", "nude-test"])
 
         # require that the number of frames is present
         total_num_lines_stat_files = 0

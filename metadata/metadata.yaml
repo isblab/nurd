@@ -1,7 +1,7 @@
 title: NuRD subcomplexes
-tags: [X-ray, NMR, SEC-MALLS, Chemical crosslinks, Integrative modeling, Cryo-EM, COSMIC]
-pmid: NA
-accessions: [NA, NA, NA]
+tags: [X-ray, NMR, SEC-MALLS, chemical crosslinks, cryo-EM, COSMIC]
+pmid:
+accessions:
 prereqs: [python/scikit, python/matplotlib, python/numpy]
 test:
     runtime: 36h
