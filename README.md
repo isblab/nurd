@@ -114,7 +114,7 @@ For the NuDe models, `mutation_colored_model.rmf` and `Distance_Maps` are also a
 **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
 International License.\
-**Last known good IMP version:** [![build info](https://integrativemodeling.org/systems/35/badge.svg?branch=main)](https://integrativemodeling.org/systems/) \
+**Last known good IMP version:** [![build info](https://integrativemodeling.org/systems/41/badge.svg?branch=main)](https://integrativemodeling.org/systems/) \
 **Testable:** Yes\
 **Parallelizeable:** Yes\
 **Publications:** Shreyas Arvindekar, Matthew J. Jackman, Jason K.K. Low, Michael J. Landsberg, Joel P. Mackay, Shruthi Viswanath. "Molecular architecture of nucleosome remodeling and deacetylase sub-complexes by integrative structure determination." Protein Science, in Press (2022) ([bioRxiv](https://doi.org/10.1101/2021.11.25.469965))
