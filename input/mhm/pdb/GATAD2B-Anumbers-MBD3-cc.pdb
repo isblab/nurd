@@ -1,3 +1,6 @@
+EXPDTA    DERIVED FROM PDB:2L2L
+TITLE     SOLUTION STRUCTURE OF THE COILED-COIL COMPLEX BETWEEN MBD2 AND
+TITLE    2 P66ALPHA
 HELIX    1   1 ILE A  138  GLN A  169  1                                  32
 HELIX    2   2 GLU B  223  MET B  244  1                                  22
 ATOM      1  N   GLY A 137     238.524 221.983 220.191  1.00  0.72           N
