@@ -350,7 +350,7 @@ em, = [r for r in s.restraints
        if isinstance(r, ihm.restraint.EM3DRestraint)]
 d = em.dataset
 print("GMM file at", d.location.path)
-print("is derived from EMDB entry", d.parents[0].location.access_code)
+# print("is derived from EMDB entry", d.parents[0].location.access_code)
 
 last_step = s.orphan_protocols[-1].steps[-1]
 last_step.num_models_end = 500_000 #10,000 models per run and 50 independent runs (8 cores per run)

@@ -1,0 +1,675 @@
+data_ALIGNED_OFFSET_CORRECTED_MTA1
+#
+_pdbx_database_status.entry_id                           ALIGNED_OFFSET_CORRECTED_MTA1
+_pdbx_database_status.ndb_tid                            ?
+_pdbx_database_status.status_code                        .
+_pdbx_database_status.status_code_sf                     ?
+_pdbx_database_status.status_code_mr                     ?
+_pdbx_database_status.status_code_cs                     ?
+_pdbx_database_status.status_coordinates_in_NDB          ?
+_pdbx_database_status.recvd_deposit_form                 ?
+_pdbx_database_status.date_deposition_form               ?
+_pdbx_database_status.recvd_coordinates                  ?
+_pdbx_database_status.date_coordinates                   ?
+_pdbx_database_status.recvd_struct_fact                  ?
+_pdbx_database_status.date_struct_fact                   ?
+_pdbx_database_status.recvd_internal_approval            ?
+_pdbx_database_status.recvd_nmr_constraints              ?
+_pdbx_database_status.date_nmr_constraints               ?
+_pdbx_database_status.recvd_chemical_shifts              ?
+_pdbx_database_status.date_chemical_shifts               ?
+_pdbx_database_status.recvd_manuscript                   ?
+_pdbx_database_status.date_manuscript                    ?
+_pdbx_database_status.name_depositor                     ?
+_pdbx_database_status.pdbx_annotator                     ?
+_pdbx_database_status.recvd_author_approval              ?
+_pdbx_database_status.date_author_approval               ?
+_pdbx_database_status.recvd_initial_deposition_date      ?
+_pdbx_database_status.date_submitted                     ?
+_pdbx_database_status.author_approval_type               ?
+_pdbx_database_status.author_release_status_code         ?
+_pdbx_database_status.auth_req_rel_date                  ?
+_pdbx_database_status.date_revised                       ?
+_pdbx_database_status.revision_id                        ?
+_pdbx_database_status.replaced_entry_id                  ?
+_pdbx_database_status.revision_description               ?
+_pdbx_database_status.date_of_NDB_release                ?
+_pdbx_database_status.date_released_to_PDB               ?
+_pdbx_database_status.date_of_PDB_release                ?
+_pdbx_database_status.date_of_sf_release                 ?
+_pdbx_database_status.date_of_mr_release                 ?
+_pdbx_database_status.date_of_cs_release                 ?
+_pdbx_database_status.date_hold_coordinates              ?
+_pdbx_database_status.date_hold_struct_fact              ?
+_pdbx_database_status.hold_for_publication               ?
+_pdbx_database_status.date_hold_nmr_constraints          ?
+_pdbx_database_status.date_hold_chemical_shifts          ?
+_pdbx_database_status.dep_release_code_coordinates       ?
+_pdbx_database_status.dep_release_code_struct_fact       ?
+_pdbx_database_status.dep_release_code_nmr_constraints   ?
+_pdbx_database_status.dep_release_code_chemical_shifts   ?
+_pdbx_database_status.dep_release_code_sequence          ?
+_pdbx_database_status.pdb_date_of_author_approval        ?
+_pdbx_database_status.deposit_site                       ?
+_pdbx_database_status.process_site                       ?
+_pdbx_database_status.skip_PDB_REMARK                    ?
+_pdbx_database_status.SG_entry                           ?
+_pdbx_database_status.date_begin_deposition              ?
+_pdbx_database_status.date_author_release_request        ?
+_pdbx_database_status.date_begin_release_preparation     ?
+_pdbx_database_status.date_begin_processing              ?
+_pdbx_database_status.date_end_processing                ?
+_pdbx_database_status.pdb_format_compatible              Y
+_pdbx_database_status.title_suppression                  ?
+_pdbx_database_status.methods_development_category       ?
+#
+_entity_poly.entity_id                      1
+_entity_poly.type                           polypeptide(L)
+_entity_poly.nstd_linkage                   no
+_entity_poly.nstd_monomer                   no
+_entity_poly.pdbx_seq_one_letter_code       AGRACESCYTTQSYQWYSWGPPNMQCRLCASCWTYWKKYGGLK
+_entity_poly.pdbx_seq_one_letter_code_can   AGRACESCYTTQSYQWYSWGPPNMQCRLCASCWTYWKKYGGLK
+_entity_poly.pdbx_sequence_evidence_code    'derived from coordinates'
+_entity_poly.pdbx_strand_id                 A
+_entity_poly.pdbx_target_identifier         ?
+#
+loop_
+_entity_poly_seq.entity_id
+_entity_poly_seq.num
+_entity_poly_seq.mon_id
+_entity_poly_seq.hetero
+1 1  ALA n 
+1 2  GLY n 
+1 3  ARG n 
+1 4  ALA n 
+1 5  CYS n 
+1 6  GLU n 
+1 7  SER n 
+1 8  CYS n 
+1 9  TYR n 
+1 10 THR n 
+1 11 THR n 
+1 12 GLN n 
+1 13 SER n 
+1 14 TYR n 
+1 15 GLN n 
+1 16 TRP n 
+1 17 TYR n 
+1 18 SER n 
+1 19 TRP n 
+1 20 GLY n 
+1 21 PRO n 
+1 22 PRO n 
+1 23 ASN n 
+1 24 MET n 
+1 25 GLN n 
+1 26 CYS n 
+1 27 ARG n 
+1 28 LEU n 
+1 29 CYS n 
+1 30 ALA n 
+1 31 SER n 
+1 32 CYS n 
+1 33 TRP n 
+1 34 THR n 
+1 35 TYR n 
+1 36 TRP n 
+1 37 LYS n 
+1 38 LYS n 
+1 39 TYR n 
+1 40 GLY n 
+1 41 GLY n 
+1 42 LEU n 
+1 43 LYS n 
+#
+_entity.id                         1
+_entity.type                       polymer
+_entity.src_method                 man
+_entity.pdbx_description           ?
+_entity.formula_weight             5068.771
+_entity.pdbx_number_of_molecules   1
+_entity.pdbx_ec                    ?
+_entity.pdbx_mutation              ?
+_entity.pdbx_fragment              ?
+_entity.details                    ?
+#
+loop_
+_pdbx_poly_seq_scheme.asym_id
+_pdbx_poly_seq_scheme.entity_id
+_pdbx_poly_seq_scheme.seq_id
+_pdbx_poly_seq_scheme.mon_id
+_pdbx_poly_seq_scheme.ndb_seq_num
+_pdbx_poly_seq_scheme.pdb_seq_num
+_pdbx_poly_seq_scheme.auth_seq_num
+_pdbx_poly_seq_scheme.pdb_mon_id
+_pdbx_poly_seq_scheme.auth_mon_id
+_pdbx_poly_seq_scheme.pdb_strand_id
+_pdbx_poly_seq_scheme.pdb_ins_code
+_pdbx_poly_seq_scheme.hetero
+A 1 1  ALA 1  389 389 ALA ALA A . n 
+A 1 2  GLY 2  390 390 GLY GLY A . n 
+A 1 3  ARG 3  391 391 ARG ARG A . n 
+A 1 4  ALA 4  392 392 ALA ALA A . n 
+A 1 5  CYS 5  393 393 CYS CYS A . n 
+A 1 6  GLU 6  394 394 GLU GLU A . n 
+A 1 7  SER 7  395 395 SER SER A . n 
+A 1 8  CYS 8  396 396 CYS CYS A . n 
+A 1 9  TYR 9  397 397 TYR TYR A . n 
+A 1 10 THR 10 398 398 THR THR A . n 
+A 1 11 THR 11 399 399 THR THR A . n 
+A 1 12 GLN 12 400 400 GLN GLN A . n 
+A 1 13 SER 13 401 401 SER SER A . n 
+A 1 14 TYR 14 402 402 TYR TYR A . n 
+A 1 15 GLN 15 403 403 GLN GLN A . n 
+A 1 16 TRP 16 404 404 TRP TRP A . n 
+A 1 17 TYR 17 405 405 TYR TYR A . n 
+A 1 18 SER 18 406 406 SER SER A . n 
+A 1 19 TRP 19 407 407 TRP TRP A . n 
+A 1 20 GLY 20 408 408 GLY GLY A . n 
+A 1 21 PRO 21 409 409 PRO PRO A . n 
+A 1 22 PRO 22 410 410 PRO PRO A . n 
+A 1 23 ASN 23 411 411 ASN ASN A . n 
+A 1 24 MET 24 412 412 MET MET A . n 
+A 1 25 GLN 25 413 413 GLN GLN A . n 
+A 1 26 CYS 26 414 414 CYS CYS A . n 
+A 1 27 ARG 27 415 415 ARG ARG A . n 
+A 1 28 LEU 28 416 416 LEU LEU A . n 
+A 1 29 CYS 29 417 417 CYS CYS A . n 
+A 1 30 ALA 30 418 418 ALA ALA A . n 
+A 1 31 SER 31 419 419 SER SER A . n 
+A 1 32 CYS 32 420 420 CYS CYS A . n 
+A 1 33 TRP 33 421 421 TRP TRP A . n 
+A 1 34 THR 34 422 422 THR THR A . n 
+A 1 35 TYR 35 423 423 TYR TYR A . n 
+A 1 36 TRP 36 424 424 TRP TRP A . n 
+A 1 37 LYS 37 425 425 LYS LYS A . n 
+A 1 38 LYS 38 426 426 LYS LYS A . n 
+A 1 39 TYR 39 427 427 TYR TYR A . n 
+A 1 40 GLY 40 428 428 GLY GLY A . n 
+A 1 41 GLY 41 429 429 GLY GLY A . n 
+A 1 42 LEU 42 430 430 LEU LEU A . n 
+A 1 43 LYS 43 431 431 LYS LYS A . n 
+#
+loop_
+_chem_comp.id
+_chem_comp.type
+_chem_comp.mon_nstd_flag
+_chem_comp.name
+_chem_comp.pdbx_synonyms
+_chem_comp.formula
+_chem_comp.formula_weight
+ALA 'L-peptide linking' y ALANINE         ? 'C3 H7 N O2'     89.093  
+ARG 'L-peptide linking' y ARGININE        ? 'C6 H15 N4 O2 1' 175.209 
+ASN 'L-peptide linking' y ASPARAGINE      ? 'C4 H8 N2 O3'    132.118 
+CYS 'L-peptide linking' y CYSTEINE        ? 'C3 H7 N O2 S'   121.158 
+GLN 'L-peptide linking' y GLUTAMINE       ? 'C5 H10 N2 O3'   146.144 
+GLU 'L-peptide linking' y 'GLUTAMIC ACID' ? 'C5 H9 N O4'     147.129 
+GLY 'peptide linking'   y GLYCINE         ? 'C2 H5 N O2'     75.067  
+LEU 'L-peptide linking' y LEUCINE         ? 'C6 H13 N O2'    131.173 
+LYS 'L-peptide linking' y LYSINE          ? 'C6 H15 N2 O2 1' 147.195 
+MET 'L-peptide linking' y METHIONINE      ? 'C5 H11 N O2 S'  149.211 
+PRO 'L-peptide linking' y PROLINE         ? 'C5 H9 N O2'     115.130 
+SER 'L-peptide linking' y SERINE          ? 'C3 H7 N O3'     105.093 
+THR 'L-peptide linking' y THREONINE       ? 'C4 H9 N O3'     119.119 
+TRP 'L-peptide linking' y TRYPTOPHAN      ? 'C11 H12 N2 O2'  204.225 
+TYR 'L-peptide linking' y TYROSINE        ? 'C9 H11 N O3'    181.189 
+#
+_struct_asym.id                            A
+_struct_asym.pdbx_PDB_id                   A
+_struct_asym.pdbx_alt_id                   A
+_struct_asym.pdbx_blank_PDB_chainid_flag   N
+_struct_asym.pdbx_type                     ATOMP
+_struct_asym.pdbx_order                    1
+_struct_asym.pdbx_modified                 N
+_struct_asym.entity_id                     1
+_struct_asym.details                       ?
+#
+_atom_sites.entry_id                    ALIGNED_OFFSET_CORRECTED_MTA1
+_atom_sites.fract_transf_matrix[1][1]   1.000000
+_atom_sites.fract_transf_matrix[1][2]   0.000000
+_atom_sites.fract_transf_matrix[1][3]   0.000000
+_atom_sites.fract_transf_matrix[2][1]   0.000000
+_atom_sites.fract_transf_matrix[2][2]   1.000000
+_atom_sites.fract_transf_matrix[2][3]   0.000000
+_atom_sites.fract_transf_matrix[3][1]   0.000000
+_atom_sites.fract_transf_matrix[3][2]   0.000000
+_atom_sites.fract_transf_matrix[3][3]   1.000000
+_atom_sites.fract_transf_vector[1]      0.00000
+_atom_sites.fract_transf_vector[2]      0.00000
+_atom_sites.fract_transf_vector[3]      0.00000
+#
+_pdbx_validate_rmsd_angle.id                         1
+_pdbx_validate_rmsd_angle.PDB_model_num              1
+_pdbx_validate_rmsd_angle.auth_atom_id_1             C
+_pdbx_validate_rmsd_angle.auth_asym_id_1             A
+_pdbx_validate_rmsd_angle.auth_comp_id_1             GLY
+_pdbx_validate_rmsd_angle.auth_seq_id_1              408
+_pdbx_validate_rmsd_angle.PDB_ins_code_1             ?
+_pdbx_validate_rmsd_angle.label_alt_id_1             ?
+_pdbx_validate_rmsd_angle.auth_atom_id_2             N
+_pdbx_validate_rmsd_angle.auth_asym_id_2             A
+_pdbx_validate_rmsd_angle.auth_comp_id_2             PRO
+_pdbx_validate_rmsd_angle.auth_seq_id_2              409
+_pdbx_validate_rmsd_angle.PDB_ins_code_2             ?
+_pdbx_validate_rmsd_angle.label_alt_id_2             ?
+_pdbx_validate_rmsd_angle.auth_atom_id_3             CD
+_pdbx_validate_rmsd_angle.auth_asym_id_3             A
+_pdbx_validate_rmsd_angle.auth_comp_id_3             PRO
+_pdbx_validate_rmsd_angle.auth_seq_id_3              409
+_pdbx_validate_rmsd_angle.PDB_ins_code_3             ?
+_pdbx_validate_rmsd_angle.label_alt_id_3             ?
+_pdbx_validate_rmsd_angle.angle_value                115.07
+_pdbx_validate_rmsd_angle.angle_target_value         128.40
+_pdbx_validate_rmsd_angle.angle_deviation            -13.33
+_pdbx_validate_rmsd_angle.angle_standard_deviation   2.10
+_pdbx_validate_rmsd_angle.linker_flag                Y
+#
+loop_
+_pdbx_validate_torsion.id
+_pdbx_validate_torsion.PDB_model_num
+_pdbx_validate_torsion.auth_comp_id
+_pdbx_validate_torsion.auth_asym_id
+_pdbx_validate_torsion.auth_seq_id
+_pdbx_validate_torsion.PDB_ins_code
+_pdbx_validate_torsion.label_alt_id
+_pdbx_validate_torsion.phi
+_pdbx_validate_torsion.psi
+1 1 ARG A 391 ? ? -69.05 85.55   
+2 1 PRO A 409 ? ? 18.86  -118.88 
+3 1 GLN A 413 ? ? 107.18 -18.73  
+#
+loop_
+_atom_type.symbol
+C 
+N 
+O 
+S 
+#
+_entry.id   ALIGNED_OFFSET_CORRECTED_MTA1
+#
+_pdbx_seq_map_depositor_info.entity_id             1
+_pdbx_seq_map_depositor_info.auth_asym_id          A
+_pdbx_seq_map_depositor_info.one_letter_code       AGRACESCYTTQSYQWYSWGPPNMQCRLCASCWTYWKKYGGLK
+_pdbx_seq_map_depositor_info.one_letter_code_mod   AGRACESCYTTQSYQWYSWGPPNMQCRLCASCWTYWKKYGGLK
+#
+loop_
+_atom_site.group_PDB
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_comp_id
+_atom_site.auth_asym_id
+_atom_site.auth_atom_id
+_atom_site.pdbx_PDB_model_num
+_atom_site.pdbx_auth_asym_id
+_atom_site.pdbx_auth_atom_name
+_atom_site.pdbx_auth_comp_id
+_atom_site.pdbx_auth_seq_id
+ATOM 1   N N   . ALA zf2 1 1  ? 357.725 321.319 288.060 1.00 0.49 ? 389 ALA zf2 N   1 zf2 N   ALA 389 
+ATOM 2   C CA  . ALA zf2 1 1  ? 358.092 321.856 289.406 1.00 0.49 ? 389 ALA zf2 CA  1 zf2 CA  ALA 389 
+ATOM 3   C C   . ALA zf2 1 1  ? 359.108 322.974 289.223 1.00 0.49 ? 389 ALA zf2 C   1 zf2 C   ALA 389 
+ATOM 4   O O   . ALA zf2 1 1  ? 360.147 322.736 288.631 1.00 0.49 ? 389 ALA zf2 O   1 zf2 O   ALA 389 
+ATOM 5   C CB  . ALA zf2 1 1  ? 358.670 320.675 290.224 1.00 0.49 ? 389 ALA zf2 CB  1 zf2 CB  ALA 389 
+ATOM 6   N N   . GLY zf2 1 2  ? 358.798 324.230 289.632 1.00 0.49 ? 390 GLY zf2 N   1 zf2 N   GLY 390 
+ATOM 7   C CA  . GLY zf2 1 2  ? 359.707 325.370 289.473 1.00 0.49 ? 390 GLY zf2 CA  1 zf2 CA  GLY 390 
+ATOM 8   C C   . GLY zf2 1 2  ? 359.279 326.327 288.394 1.00 0.49 ? 390 GLY zf2 C   1 zf2 C   GLY 390 
+ATOM 9   O O   . GLY zf2 1 2  ? 359.685 327.474 288.365 1.00 0.49 ? 390 GLY zf2 O   1 zf2 O   GLY 390 
+ATOM 10  N N   . ARG zf2 1 3  ? 358.373 325.868 287.503 1.00 0.49 ? 391 ARG zf2 N   1 zf2 N   ARG 391 
+ATOM 11  C CA  . ARG zf2 1 3  ? 357.628 326.694 286.577 1.00 0.49 ? 391 ARG zf2 CA  1 zf2 CA  ARG 391 
+ATOM 12  C C   . ARG zf2 1 3  ? 356.645 327.532 287.365 1.00 0.49 ? 391 ARG zf2 C   1 zf2 C   ARG 391 
+ATOM 13  O O   . ARG zf2 1 3  ? 355.510 327.133 287.564 1.00 0.49 ? 391 ARG zf2 O   1 zf2 O   ARG 391 
+ATOM 14  C CB  . ARG zf2 1 3  ? 356.819 325.836 285.548 1.00 0.49 ? 391 ARG zf2 CB  1 zf2 CB  ARG 391 
+ATOM 15  C CG  . ARG zf2 1 3  ? 357.679 324.809 284.784 1.00 0.49 ? 391 ARG zf2 CG  1 zf2 CG  ARG 391 
+ATOM 16  C CD  . ARG zf2 1 3  ? 356.965 324.036 283.662 1.00 0.49 ? 391 ARG zf2 CD  1 zf2 CD  ARG 391 
+ATOM 17  N NE  . ARG zf2 1 3  ? 358.008 323.182 282.972 1.00 0.49 ? 391 ARG zf2 NE  1 zf2 NE  ARG 391 
+ATOM 18  C CZ  . ARG zf2 1 3  ? 357.723 322.299 282.000 1.00 0.49 ? 391 ARG zf2 CZ  1 zf2 CZ  ARG 391 
+ATOM 19  N NH1 . ARG zf2 1 3  ? 358.689 321.570 281.442 1.00 0.49 ? 391 ARG zf2 NH1 1 zf2 NH1 ARG 391 
+ATOM 20  N NH2 . ARG zf2 1 3  ? 356.480 322.122 281.571 1.00 0.49 ? 391 ARG zf2 NH2 1 zf2 NH2 ARG 391 
+ATOM 21  N N   . ALA zf2 1 4  ? 357.064 328.694 287.882 1.00 0.64 ? 392 ALA zf2 N   1 zf2 N   ALA 392 
+ATOM 22  C CA  . ALA zf2 1 4  ? 356.155 329.575 288.555 1.00 0.64 ? 392 ALA zf2 CA  1 zf2 CA  ALA 392 
+ATOM 23  C C   . ALA zf2 1 4  ? 355.529 330.436 287.476 1.00 0.64 ? 392 ALA zf2 C   1 zf2 C   ALA 392 
+ATOM 24  O O   . ALA zf2 1 4  ? 356.211 330.927 286.589 1.00 0.64 ? 392 ALA zf2 O   1 zf2 O   ALA 392 
+ATOM 25  C CB  . ALA zf2 1 4  ? 356.923 330.428 289.583 1.00 0.64 ? 392 ALA zf2 CB  1 zf2 CB  ALA 392 
+ATOM 26  N N   . CYS zf2 1 5  ? 354.192 330.598 287.478 1.00 0.65 ? 393 CYS zf2 N   1 zf2 N   CYS 393 
+ATOM 27  C CA  . CYS zf2 1 5  ? 353.539 331.504 286.552 1.00 0.65 ? 393 CYS zf2 CA  1 zf2 CA  CYS 393 
+ATOM 28  C C   . CYS zf2 1 5  ? 354.050 332.943 286.710 1.00 0.65 ? 393 CYS zf2 C   1 zf2 C   CYS 393 
+ATOM 29  O O   . CYS zf2 1 5  ? 353.767 333.589 287.707 1.00 0.65 ? 393 CYS zf2 O   1 zf2 O   CYS 393 
+ATOM 30  C CB  . CYS zf2 1 5  ? 351.990 331.469 286.769 1.00 0.65 ? 393 CYS zf2 CB  1 zf2 CB  CYS 393 
+ATOM 31  S SG  . CYS zf2 1 5  ? 350.955 332.517 285.701 1.00 0.65 ? 393 CYS zf2 SG  1 zf2 SG  CYS 393 
+ATOM 32  N N   . GLU zf2 1 6  ? 354.766 333.509 285.726 1.00 0.58 ? 394 GLU zf2 N   1 zf2 N   GLU 394 
+ATOM 33  C CA  . GLU zf2 1 6  ? 355.242 334.894 285.722 1.00 0.58 ? 394 GLU zf2 CA  1 zf2 CA  GLU 394 
+ATOM 34  C C   . GLU zf2 1 6  ? 354.161 336.012 285.896 1.00 0.58 ? 394 GLU zf2 C   1 zf2 C   GLU 394 
+ATOM 35  O O   . GLU zf2 1 6  ? 354.481 337.166 286.136 1.00 0.58 ? 394 GLU zf2 O   1 zf2 O   GLU 394 
+ATOM 36  C CB  . GLU zf2 1 6  ? 356.047 335.146 284.405 1.00 0.58 ? 394 GLU zf2 CB  1 zf2 CB  GLU 394 
+ATOM 37  C CG  . GLU zf2 1 6  ? 357.307 334.268 284.162 1.00 0.58 ? 394 GLU zf2 CG  1 zf2 CG  GLU 394 
+ATOM 38  C CD  . GLU zf2 1 6  ? 358.435 334.613 285.132 1.00 0.58 ? 394 GLU zf2 CD  1 zf2 CD  GLU 394 
+ATOM 39  O OE1 . GLU zf2 1 6  ? 358.678 335.829 285.333 1.00 0.58 ? 394 GLU zf2 OE1 1 zf2 OE1 GLU 394 
+ATOM 40  O OE2 . GLU zf2 1 6  ? 359.069 333.659 285.645 1.00 0.58 ? 394 GLU zf2 OE2 1 zf2 OE2 GLU 394 
+ATOM 41  N N   . SER zf2 1 7  ? 352.842 335.687 285.810 1.00 0.62 ? 395 SER zf2 N   1 zf2 N   SER 395 
+ATOM 42  C CA  . SER zf2 1 7  ? 351.698 336.599 285.972 1.00 0.62 ? 395 SER zf2 CA  1 zf2 CA  SER 395 
+ATOM 43  C C   . SER zf2 1 7  ? 350.942 336.355 287.252 1.00 0.62 ? 395 SER zf2 C   1 zf2 C   SER 395 
+ATOM 44  O O   . SER zf2 1 7  ? 350.168 337.192 287.670 1.00 0.62 ? 395 SER zf2 O   1 zf2 O   SER 395 
+ATOM 45  C CB  . SER zf2 1 7  ? 350.553 336.423 284.916 1.00 0.62 ? 395 SER zf2 CB  1 zf2 CB  SER 395 
+ATOM 46  O OG  . SER zf2 1 7  ? 350.617 337.346 283.824 1.00 0.62 ? 395 SER zf2 OG  1 zf2 OG  SER 395 
+ATOM 47  N N   . CYS zf2 1 8  ? 351.099 335.196 287.916 1.00 0.67 ? 396 CYS zf2 N   1 zf2 N   CYS 396 
+ATOM 48  C CA  . CYS zf2 1 8  ? 350.338 335.017 289.147 1.00 0.67 ? 396 CYS zf2 CA  1 zf2 CA  CYS 396 
+ATOM 49  C C   . CYS zf2 1 8  ? 351.029 334.138 290.165 1.00 0.67 ? 396 CYS zf2 C   1 zf2 C   CYS 396 
+ATOM 50  O O   . CYS zf2 1 8  ? 350.442 333.788 291.180 1.00 0.67 ? 396 CYS zf2 O   1 zf2 O   CYS 396 
+ATOM 51  C CB  . CYS zf2 1 8  ? 348.904 334.477 288.898 1.00 0.67 ? 396 CYS zf2 CB  1 zf2 CB  CYS 396 
+ATOM 52  S SG  . CYS zf2 1 8  ? 348.831 332.754 288.327 1.00 0.67 ? 396 CYS zf2 SG  1 zf2 SG  CYS 396 
+ATOM 53  N N   . TYR zf2 1 9  ? 352.292 333.756 289.908 1.00 0.57 ? 397 TYR zf2 N   1 zf2 N   TYR 397 
+ATOM 54  C CA  . TYR zf2 1 9  ? 353.187 332.998 290.766 1.00 0.57 ? 397 TYR zf2 CA  1 zf2 CA  TYR 397 
+ATOM 55  C C   . TYR zf2 1 9  ? 352.730 331.589 291.106 1.00 0.57 ? 397 TYR zf2 C   1 zf2 C   TYR 397 
+ATOM 56  O O   . TYR zf2 1 9  ? 353.315 330.909 291.941 1.00 0.57 ? 397 TYR zf2 O   1 zf2 O   TYR 397 
+ATOM 57  C CB  . TYR zf2 1 9  ? 353.558 333.774 292.048 1.00 0.57 ? 397 TYR zf2 CB  1 zf2 CB  TYR 397 
+ATOM 58  C CG  . TYR zf2 1 9  ? 354.202 335.090 291.714 1.00 0.57 ? 397 TYR zf2 CG  1 zf2 CG  TYR 397 
+ATOM 59  C CD1 . TYR zf2 1 9  ? 355.567 335.163 291.400 1.00 0.57 ? 397 TYR zf2 CD1 1 zf2 CD1 TYR 397 
+ATOM 60  C CD2 . TYR zf2 1 9  ? 353.446 336.272 291.746 1.00 0.57 ? 397 TYR zf2 CD2 1 zf2 CD2 TYR 397 
+ATOM 61  C CE1 . TYR zf2 1 9  ? 356.176 336.405 291.172 1.00 0.57 ? 397 TYR zf2 CE1 1 zf2 CE1 TYR 397 
+ATOM 62  C CE2 . TYR zf2 1 9  ? 354.052 337.511 291.506 1.00 0.57 ? 397 TYR zf2 CE2 1 zf2 CE2 TYR 397 
+ATOM 63  C CZ  . TYR zf2 1 9  ? 355.425 337.578 291.243 1.00 0.57 ? 397 TYR zf2 CZ  1 zf2 CZ  TYR 397 
+ATOM 64  O OH  . TYR zf2 1 9  ? 356.044 338.828 291.072 1.00 0.57 ? 397 TYR zf2 OH  1 zf2 OH  TYR 397 
+ATOM 65  N N   . THR zf2 1 10 ? 351.690 331.080 290.413 1.00 0.62 ? 398 THR zf2 N   1 zf2 N   THR 398 
+ATOM 66  C CA  . THR zf2 1 10 ? 351.126 329.772 290.710 1.00 0.62 ? 398 THR zf2 CA  1 zf2 CA  THR 398 
+ATOM 67  C C   . THR zf2 1 10 ? 352.010 328.705 290.111 1.00 0.62 ? 398 THR zf2 C   1 zf2 C   THR 398 
+ATOM 68  O O   . THR zf2 1 10 ? 352.492 328.853 288.994 1.00 0.62 ? 398 THR zf2 O   1 zf2 O   THR 398 
+ATOM 69  C CB  . THR zf2 1 10 ? 349.668 329.590 290.278 1.00 0.62 ? 398 THR zf2 CB  1 zf2 CB  THR 398 
+ATOM 70  O OG1 . THR zf2 1 10 ? 349.088 328.454 290.902 1.00 0.62 ? 398 THR zf2 OG1 1 zf2 OG1 THR 398 
+ATOM 71  C CG2 . THR zf2 1 10 ? 349.472 329.420 288.765 1.00 0.62 ? 398 THR zf2 CG2 1 zf2 CG2 THR 398 
+ATOM 72  N N   . THR zf2 1 11 ? 352.278 327.608 290.843 1.00 0.57 ? 399 THR zf2 N   1 zf2 N   THR 399 
+ATOM 73  C CA  . THR zf2 1 11 ? 353.041 326.486 290.313 1.00 0.57 ? 399 THR zf2 CA  1 zf2 CA  THR 399 
+ATOM 74  C C   . THR zf2 1 11 ? 352.137 325.359 289.855 1.00 0.57 ? 399 THR zf2 C   1 zf2 C   THR 399 
+ATOM 75  O O   . THR zf2 1 11 ? 352.594 324.422 289.207 1.00 0.57 ? 399 THR zf2 O   1 zf2 O   THR 399 
+ATOM 76  C CB  . THR zf2 1 11 ? 353.966 325.846 291.342 1.00 0.57 ? 399 THR zf2 CB  1 zf2 CB  THR 399 
+ATOM 77  O OG1 . THR zf2 1 11 ? 353.264 325.397 292.501 1.00 0.57 ? 399 THR zf2 OG1 1 zf2 OG1 THR 399 
+ATOM 78  C CG2 . THR zf2 1 11 ? 354.989 326.878 291.823 1.00 0.57 ? 399 THR zf2 CG2 1 zf2 CG2 THR 399 
+ATOM 79  N N   . GLN zf2 1 12 ? 350.830 325.434 290.181 1.00 0.56 ? 400 GLN zf2 N   1 zf2 N   GLN 400 
+ATOM 80  C CA  . GLN zf2 1 12 ? 349.850 324.440 289.812 1.00 0.56 ? 400 GLN zf2 CA  1 zf2 CA  GLN 400 
+ATOM 81  C C   . GLN zf2 1 12 ? 348.964 325.053 288.746 1.00 0.56 ? 400 GLN zf2 C   1 zf2 C   GLN 400 
+ATOM 82  O O   . GLN zf2 1 12 ? 348.347 326.103 288.940 1.00 0.56 ? 400 GLN zf2 O   1 zf2 O   GLN 400 
+ATOM 83  C CB  . GLN zf2 1 12 ? 348.979 323.990 291.021 1.00 0.56 ? 400 GLN zf2 CB  1 zf2 CB  GLN 400 
+ATOM 84  C CG  . GLN zf2 1 12 ? 349.757 323.667 292.321 1.00 0.56 ? 400 GLN zf2 CG  1 zf2 CG  GLN 400 
+ATOM 85  C CD  . GLN zf2 1 12 ? 350.688 322.468 292.167 1.00 0.56 ? 400 GLN zf2 CD  1 zf2 CD  GLN 400 
+ATOM 86  O OE1 . GLN zf2 1 12 ? 350.264 321.314 292.177 1.00 0.56 ? 400 GLN zf2 OE1 1 zf2 OE1 GLN 400 
+ATOM 87  N NE2 . GLN zf2 1 12 ? 352.009 322.730 292.040 1.00 0.56 ? 400 GLN zf2 NE2 1 zf2 NE2 GLN 400 
+ATOM 88  N N   . SER zf2 1 13 ? 348.890 324.425 287.563 1.00 0.60 ? 401 SER zf2 N   1 zf2 N   SER 401 
+ATOM 89  C CA  . SER zf2 1 13 ? 348.123 324.962 286.461 1.00 0.60 ? 401 SER zf2 CA  1 zf2 CA  SER 401 
+ATOM 90  C C   . SER zf2 1 13 ? 347.494 323.822 285.710 1.00 0.60 ? 401 SER zf2 C   1 zf2 C   SER 401 
+ATOM 91  O O   . SER zf2 1 13 ? 348.084 322.756 285.572 1.00 0.60 ? 401 SER zf2 O   1 zf2 O   SER 401 
+ATOM 92  C CB  . SER zf2 1 13 ? 348.996 325.769 285.472 1.00 0.60 ? 401 SER zf2 CB  1 zf2 CB  SER 401 
+ATOM 93  O OG  . SER zf2 1 13 ? 348.215 326.313 284.397 1.00 0.60 ? 401 SER zf2 OG  1 zf2 OG  SER 401 
+ATOM 94  N N   . TYR zf2 1 14 ? 346.259 324.046 285.209 1.00 0.53 ? 402 TYR zf2 N   1 zf2 N   TYR 402 
+ATOM 95  C CA  . TYR zf2 1 14 ? 345.531 323.138 284.345 1.00 0.53 ? 402 TYR zf2 CA  1 zf2 CA  TYR 402 
+ATOM 96  C C   . TYR zf2 1 14 ? 346.234 322.960 283.006 1.00 0.53 ? 402 TYR zf2 C   1 zf2 C   TYR 402 
+ATOM 97  O O   . TYR zf2 1 14 ? 346.350 321.860 282.480 1.00 0.53 ? 402 TYR zf2 O   1 zf2 O   TYR 402 
+ATOM 98  C CB  . TYR zf2 1 14 ? 344.074 323.657 284.161 1.00 0.53 ? 402 TYR zf2 CB  1 zf2 CB  TYR 402 
+ATOM 99  C CG  . TYR zf2 1 14 ? 343.210 322.650 283.462 1.00 0.53 ? 402 TYR zf2 CG  1 zf2 CG  TYR 402 
+ATOM 100 C CD1 . TYR zf2 1 14 ? 342.881 322.801 282.107 1.00 0.53 ? 402 TYR zf2 CD1 1 zf2 CD1 TYR 402 
+ATOM 101 C CD2 . TYR zf2 1 14 ? 342.738 321.524 284.155 1.00 0.53 ? 402 TYR zf2 CD2 1 zf2 CD2 TYR 402 
+ATOM 102 C CE1 . TYR zf2 1 14 ? 342.084 321.850 281.458 1.00 0.53 ? 402 TYR zf2 CE1 1 zf2 CE1 TYR 402 
+ATOM 103 C CE2 . TYR zf2 1 14 ? 341.940 320.571 283.505 1.00 0.53 ? 402 TYR zf2 CE2 1 zf2 CE2 TYR 402 
+ATOM 104 C CZ  . TYR zf2 1 14 ? 341.605 320.741 282.158 1.00 0.53 ? 402 TYR zf2 CZ  1 zf2 CZ  TYR 402 
+ATOM 105 O OH  . TYR zf2 1 14 ? 340.784 319.806 281.501 1.00 0.53 ? 402 TYR zf2 OH  1 zf2 OH  TYR 402 
+ATOM 106 N N   . GLN zf2 1 15 ? 346.748 324.062 282.433 1.00 0.61 ? 403 GLN zf2 N   1 zf2 N   GLN 403 
+ATOM 107 C CA  . GLN zf2 1 15 ? 347.475 324.000 281.194 1.00 0.61 ? 403 GLN zf2 CA  1 zf2 CA  GLN 403 
+ATOM 108 C C   . GLN zf2 1 15 ? 348.593 325.014 281.320 1.00 0.61 ? 403 GLN zf2 C   1 zf2 C   GLN 403 
+ATOM 109 O O   . GLN zf2 1 15 ? 348.364 326.200 281.532 1.00 0.61 ? 403 GLN zf2 O   1 zf2 O   GLN 403 
+ATOM 110 C CB  . GLN zf2 1 15 ? 346.519 324.280 280.002 1.00 0.61 ? 403 GLN zf2 CB  1 zf2 CB  GLN 403 
+ATOM 111 C CG  . GLN zf2 1 15 ? 347.162 324.417 278.606 1.00 0.61 ? 403 GLN zf2 CG  1 zf2 CG  GLN 403 
+ATOM 112 C CD  . GLN zf2 1 15 ? 347.648 323.051 278.139 1.00 0.61 ? 403 GLN zf2 CD  1 zf2 CD  GLN 403 
+ATOM 113 O OE1 . GLN zf2 1 15 ? 346.864 322.110 278.030 1.00 0.61 ? 403 GLN zf2 OE1 1 zf2 OE1 GLN 403 
+ATOM 114 N NE2 . GLN zf2 1 15 ? 348.959 322.913 277.848 1.00 0.61 ? 403 GLN zf2 NE2 1 zf2 NE2 GLN 403 
+ATOM 115 N N   . TRP zf2 1 16 ? 349.865 324.574 281.240 1.00 0.54 ? 404 TRP zf2 N   1 zf2 N   TRP 404 
+ATOM 116 C CA  . TRP zf2 1 16 ? 350.987 325.489 281.200 1.00 0.54 ? 404 TRP zf2 CA  1 zf2 CA  TRP 404 
+ATOM 117 C C   . TRP zf2 1 16 ? 351.094 326.178 279.851 1.00 0.54 ? 404 TRP zf2 C   1 zf2 C   TRP 404 
+ATOM 118 O O   . TRP zf2 1 16 ? 351.557 325.598 278.872 1.00 0.54 ? 404 TRP zf2 O   1 zf2 O   TRP 404 
+ATOM 119 C CB  . TRP zf2 1 16 ? 352.317 324.762 281.544 1.00 0.54 ? 404 TRP zf2 CB  1 zf2 CB  TRP 404 
+ATOM 120 C CG  . TRP zf2 1 16 ? 352.579 324.648 283.026 1.00 0.54 ? 404 TRP zf2 CG  1 zf2 CG  TRP 404 
+ATOM 121 C CD1 . TRP zf2 1 16 ? 352.725 323.542 283.821 1.00 0.54 ? 404 TRP zf2 CD1 1 zf2 CD1 TRP 404 
+ATOM 122 C CD2 . TRP zf2 1 16 ? 352.685 325.787 283.893 1.00 0.54 ? 404 TRP zf2 CD2 1 zf2 CD2 TRP 404 
+ATOM 123 N NE1 . TRP zf2 1 16 ? 352.936 323.926 285.129 1.00 0.54 ? 404 TRP zf2 NE1 1 zf2 NE1 TRP 404 
+ATOM 124 C CE2 . TRP zf2 1 16 ? 352.900 325.294 285.186 1.00 0.54 ? 404 TRP zf2 CE2 1 zf2 CE2 TRP 404 
+ATOM 125 C CE3 . TRP zf2 1 16 ? 352.616 327.159 283.649 1.00 0.54 ? 404 TRP zf2 CE3 1 zf2 CE3 TRP 404 
+ATOM 126 C CZ2 . TRP zf2 1 16 ? 353.035 326.148 286.257 1.00 0.54 ? 404 TRP zf2 CZ2 1 zf2 CZ2 TRP 404 
+ATOM 127 C CZ3 . TRP zf2 1 16 ? 352.769 328.026 284.738 1.00 0.54 ? 404 TRP zf2 CZ3 1 zf2 CZ3 TRP 404 
+ATOM 128 C CH2 . TRP zf2 1 16 ? 352.969 327.525 286.021 1.00 0.54 ? 404 TRP zf2 CH2 1 zf2 CH2 TRP 404 
+ATOM 129 N N   . TYR zf2 1 17 ? 350.693 327.463 279.782 1.00 0.55 ? 405 TYR zf2 N   1 zf2 N   TYR 405 
+ATOM 130 C CA  . TYR zf2 1 17 ? 350.812 328.280 278.606 1.00 0.55 ? 405 TYR zf2 CA  1 zf2 CA  TYR 405 
+ATOM 131 C C   . TYR zf2 1 17 ? 352.218 328.838 278.630 1.00 0.55 ? 405 TYR zf2 C   1 zf2 C   TYR 405 
+ATOM 132 O O   . TYR zf2 1 17 ? 352.524 329.878 279.211 1.00 0.55 ? 405 TYR zf2 O   1 zf2 O   TYR 405 
+ATOM 133 C CB  . TYR zf2 1 17 ? 349.706 329.375 278.583 1.00 0.55 ? 405 TYR zf2 CB  1 zf2 CB  TYR 405 
+ATOM 134 C CG  . TYR zf2 1 17 ? 349.652 330.068 277.265 1.00 0.55 ? 405 TYR zf2 CG  1 zf2 CG  TYR 405 
+ATOM 135 C CD1 . TYR zf2 1 17 ? 350.182 331.359 277.135 1.00 0.55 ? 405 TYR zf2 CD1 1 zf2 CD1 TYR 405 
+ATOM 136 C CD2 . TYR zf2 1 17 ? 349.040 329.459 276.162 1.00 0.55 ? 405 TYR zf2 CD2 1 zf2 CD2 TYR 405 
+ATOM 137 C CE1 . TYR zf2 1 17 ? 350.111 332.024 275.907 1.00 0.55 ? 405 TYR zf2 CE1 1 zf2 CE1 TYR 405 
+ATOM 138 C CE2 . TYR zf2 1 17 ? 348.979 330.126 274.931 1.00 0.55 ? 405 TYR zf2 CE2 1 zf2 CE2 TYR 405 
+ATOM 139 C CZ  . TYR zf2 1 17 ? 349.531 331.405 274.803 1.00 0.55 ? 405 TYR zf2 CZ  1 zf2 CZ  TYR 405 
+ATOM 140 O OH  . TYR zf2 1 17 ? 349.439 332.094 273.582 1.00 0.55 ? 405 TYR zf2 OH  1 zf2 OH  TYR 405 
+ATOM 141 N N   . SER zf2 1 18 ? 353.143 328.096 277.983 1.00 0.53 ? 406 SER zf2 N   1 zf2 N   SER 406 
+ATOM 142 C CA  . SER zf2 1 18 ? 354.478 328.569 277.688 1.00 0.53 ? 406 SER zf2 CA  1 zf2 CA  SER 406 
+ATOM 143 C C   . SER zf2 1 18 ? 354.259 329.628 276.678 1.00 0.53 ? 406 SER zf2 C   1 zf2 C   SER 406 
+ATOM 144 O O   . SER zf2 1 18 ? 353.790 329.362 275.575 1.00 0.53 ? 406 SER zf2 O   1 zf2 O   SER 406 
+ATOM 145 C CB  . SER zf2 1 18 ? 355.442 327.495 277.120 1.00 0.53 ? 406 SER zf2 CB  1 zf2 CB  SER 406 
+ATOM 146 O OG  . SER zf2 1 18 ? 356.813 327.916 277.093 1.00 0.53 ? 406 SER zf2 OG  1 zf2 OG  SER 406 
+ATOM 147 N N   . TRP zf2 1 19 ? 354.512 330.881 277.095 1.00 0.44 ? 407 TRP zf2 N   1 zf2 N   TRP 407 
+ATOM 148 C CA  . TRP zf2 1 19 ? 354.255 332.017 276.275 1.00 0.44 ? 407 TRP zf2 CA  1 zf2 CA  TRP 407 
+ATOM 149 C C   . TRP zf2 1 19 ? 355.042 331.894 275.031 1.00 0.44 ? 407 TRP zf2 C   1 zf2 C   TRP 407 
+ATOM 150 O O   . TRP zf2 1 19 ? 356.167 331.415 275.014 1.00 0.44 ? 407 TRP zf2 O   1 zf2 O   TRP 407 
+ATOM 151 C CB  . TRP zf2 1 19 ? 354.801 333.315 276.849 1.00 0.44 ? 407 TRP zf2 CB  1 zf2 CB  TRP 407 
+ATOM 152 C CG  . TRP zf2 1 19 ? 353.918 334.094 277.738 1.00 0.44 ? 407 TRP zf2 CG  1 zf2 CG  TRP 407 
+ATOM 153 C CD1 . TRP zf2 1 19 ? 354.127 334.213 279.065 1.00 0.44 ? 407 TRP zf2 CD1 1 zf2 CD1 TRP 407 
+ATOM 154 C CD2 . TRP zf2 1 19 ? 352.757 334.871 277.405 1.00 0.44 ? 407 TRP zf2 CD2 1 zf2 CD2 TRP 407 
+ATOM 155 N NE1 . TRP zf2 1 19 ? 353.265 335.123 279.549 1.00 0.44 ? 407 TRP zf2 NE1 1 zf2 NE1 TRP 407 
+ATOM 156 C CE2 . TRP zf2 1 19 ? 352.305 335.391 278.626 1.00 0.44 ? 407 TRP zf2 CE2 1 zf2 CE2 TRP 407 
+ATOM 157 C CE3 . TRP zf2 1 19 ? 352.039 335.081 276.231 1.00 0.44 ? 407 TRP zf2 CE3 1 zf2 CE3 TRP 407 
+ATOM 158 C CZ2 . TRP zf2 1 19 ? 351.149 336.141 278.682 1.00 0.44 ? 407 TRP zf2 CZ2 1 zf2 CZ2 TRP 407 
+ATOM 159 C CZ3 . TRP zf2 1 19 ? 350.837 335.801 276.310 1.00 0.44 ? 407 TRP zf2 CZ3 1 zf2 CZ3 TRP 407 
+ATOM 160 C CH2 . TRP zf2 1 19 ? 350.348 336.245 277.546 1.00 0.44 ? 407 TRP zf2 CH2 1 zf2 CH2 TRP 407 
+ATOM 161 N N   . GLY zf2 1 20 ? 354.437 332.387 273.967 1.00 0.35 ? 408 GLY zf2 N   1 zf2 N   GLY 408 
+ATOM 162 C CA  . GLY zf2 1 20 ? 355.157 332.544 272.747 1.00 0.35 ? 408 GLY zf2 CA  1 zf2 CA  GLY 408 
+ATOM 163 C C   . GLY zf2 1 20 ? 355.208 334.016 272.437 1.00 0.35 ? 408 GLY zf2 C   1 zf2 C   GLY 408 
+ATOM 164 O O   . GLY zf2 1 20 ? 355.383 334.861 273.268 1.00 0.35 ? 408 GLY zf2 O   1 zf2 O   GLY 408 
+ATOM 165 N N   . PRO zf2 1 21 ? 355.019 334.274 271.173 1.00 0.25 ? 409 PRO zf2 N   1 zf2 N   PRO 409 
+ATOM 166 C CA  . PRO zf2 1 21 ? 355.464 335.541 270.584 1.00 0.25 ? 409 PRO zf2 CA  1 zf2 CA  PRO 409 
+ATOM 167 C C   . PRO zf2 1 21 ? 356.551 336.498 271.243 1.00 0.25 ? 409 PRO zf2 C   1 zf2 C   PRO 409 
+ATOM 168 O O   . PRO zf2 1 21 ? 357.648 335.958 271.372 1.00 0.25 ? 409 PRO zf2 O   1 zf2 O   PRO 409 
+ATOM 169 C CB  . PRO zf2 1 21 ? 354.118 336.175 270.300 1.00 0.25 ? 409 PRO zf2 CB  1 zf2 CB  PRO 409 
+ATOM 170 C CG  . PRO zf2 1 21 ? 353.071 335.108 270.011 1.00 0.25 ? 409 PRO zf2 CG  1 zf2 CG  PRO 409 
+ATOM 171 C CD  . PRO zf2 1 21 ? 353.688 333.867 270.637 1.00 0.25 ? 409 PRO zf2 CD  1 zf2 CD  PRO 409 
+ATOM 172 N N   . PRO zf2 1 22 ? 356.440 337.815 271.680 1.00 0.26 ? 410 PRO zf2 N   1 zf2 N   PRO 410 
+ATOM 173 C CA  . PRO zf2 1 22 ? 357.506 338.541 272.406 1.00 0.26 ? 410 PRO zf2 CA  1 zf2 CA  PRO 410 
+ATOM 174 C C   . PRO zf2 1 22 ? 357.738 338.024 273.805 1.00 0.26 ? 410 PRO zf2 C   1 zf2 C   PRO 410 
+ATOM 175 O O   . PRO zf2 1 22 ? 358.741 338.380 274.414 1.00 0.26 ? 410 PRO zf2 O   1 zf2 O   PRO 410 
+ATOM 176 C CB  . PRO zf2 1 22 ? 357.036 340.022 272.476 1.00 0.26 ? 410 PRO zf2 CB  1 zf2 CB  PRO 410 
+ATOM 177 C CG  . PRO zf2 1 22 ? 355.526 339.966 272.302 1.00 0.26 ? 410 PRO zf2 CG  1 zf2 CG  PRO 410 
+ATOM 178 C CD  . PRO zf2 1 22 ? 355.330 338.743 271.412 1.00 0.26 ? 410 PRO zf2 CD  1 zf2 CD  PRO 410 
+ATOM 179 N N   . ASN zf2 1 23 ? 356.832 337.188 274.328 1.00 0.40 ? 411 ASN zf2 N   1 zf2 N   ASN 411 
+ATOM 180 C CA  . ASN zf2 1 23 ? 356.907 336.681 275.675 1.00 0.40 ? 411 ASN zf2 CA  1 zf2 CA  ASN 411 
+ATOM 181 C C   . ASN zf2 1 23 ? 357.501 335.271 275.684 1.00 0.40 ? 411 ASN zf2 C   1 zf2 C   ASN 411 
+ATOM 182 O O   . ASN zf2 1 23 ? 357.532 334.629 276.730 1.00 0.40 ? 411 ASN zf2 O   1 zf2 O   ASN 411 
+ATOM 183 C CB  . ASN zf2 1 23 ? 355.495 336.675 276.319 1.00 0.40 ? 411 ASN zf2 CB  1 zf2 CB  ASN 411 
+ATOM 184 C CG  . ASN zf2 1 23 ? 354.957 338.082 276.524 1.00 0.40 ? 411 ASN zf2 CG  1 zf2 CG  ASN 411 
+ATOM 185 O OD1 . ASN zf2 1 23 ? 355.644 339.000 276.962 1.00 0.40 ? 411 ASN zf2 OD1 1 zf2 OD1 ASN 411 
+ATOM 186 N ND2 . ASN zf2 1 23 ? 353.637 338.257 276.263 1.00 0.40 ? 411 ASN zf2 ND2 1 zf2 ND2 ASN 411 
+ATOM 187 N N   . MET zf2 1 24 ? 357.981 334.739 274.519 1.00 0.28 ? 412 MET zf2 N   1 zf2 N   MET 412 
+ATOM 188 C CA  . MET zf2 1 24 ? 358.699 333.475 274.390 1.00 0.28 ? 412 MET zf2 CA  1 zf2 CA  MET 412 
+ATOM 189 C C   . MET zf2 1 24 ? 359.748 333.331 275.455 1.00 0.28 ? 412 MET zf2 C   1 zf2 C   MET 412 
+ATOM 190 O O   . MET zf2 1 24 ? 360.434 334.317 275.689 1.00 0.28 ? 412 MET zf2 O   1 zf2 O   MET 412 
+ATOM 191 C CB  . MET zf2 1 24 ? 359.326 333.278 272.990 1.00 0.28 ? 412 MET zf2 CB  1 zf2 CB  MET 412 
+ATOM 192 C CG  . MET zf2 1 24 ? 359.862 331.853 272.732 1.00 0.28 ? 412 MET zf2 CG  1 zf2 CG  MET 412 
+ATOM 193 S SD  . MET zf2 1 24 ? 360.567 331.610 271.074 1.00 0.28 ? 412 MET zf2 SD  1 zf2 SD  MET 412 
+ATOM 194 C CE  . MET zf2 1 24 ? 358.994 331.749 270.180 1.00 0.28 ? 412 MET zf2 CE  1 zf2 CE  MET 412 
+ATOM 195 N N   . GLN zf2 1 25 ? 359.814 332.140 276.117 1.00 0.29 ? 413 GLN zf2 N   1 zf2 N   GLN 413 
+ATOM 196 C CA  . GLN zf2 1 25 ? 360.720 331.764 277.206 1.00 0.29 ? 413 GLN zf2 CA  1 zf2 CA  GLN 413 
+ATOM 197 C C   . GLN zf2 1 25 ? 359.992 331.693 278.546 1.00 0.29 ? 413 GLN zf2 C   1 zf2 C   GLN 413 
+ATOM 198 O O   . GLN zf2 1 25 ? 360.437 331.032 279.481 1.00 0.29 ? 413 GLN zf2 O   1 zf2 O   GLN 413 
+ATOM 199 C CB  . GLN zf2 1 25 ? 361.963 332.705 277.291 1.00 0.29 ? 413 GLN zf2 CB  1 zf2 CB  GLN 413 
+ATOM 200 C CG  . GLN zf2 1 25 ? 363.086 332.455 278.302 1.00 0.29 ? 413 GLN zf2 CG  1 zf2 CG  GLN 413 
+ATOM 201 C CD  . GLN zf2 1 25 ? 363.789 331.148 278.005 1.00 0.29 ? 413 GLN zf2 CD  1 zf2 CD  GLN 413 
+ATOM 202 O OE1 . GLN zf2 1 25 ? 364.228 330.856 276.893 1.00 0.29 ? 413 GLN zf2 OE1 1 zf2 OE1 GLN 413 
+ATOM 203 N NE2 . GLN zf2 1 25 ? 363.918 330.316 279.060 1.00 0.29 ? 413 GLN zf2 NE2 1 zf2 NE2 GLN 413 
+ATOM 204 N N   . CYS zf2 1 26 ? 358.807 332.326 278.644 1.00 0.60 ? 414 CYS zf2 N   1 zf2 N   CYS 414 
+ATOM 205 C CA  . CYS zf2 1 26 ? 358.090 332.478 279.895 1.00 0.60 ? 414 CYS zf2 CA  1 zf2 CA  CYS 414 
+ATOM 206 C C   . CYS zf2 1 26 ? 357.004 331.434 280.020 1.00 0.60 ? 414 CYS zf2 C   1 zf2 C   CYS 414 
+ATOM 207 O O   . CYS zf2 1 26 ? 356.599 330.804 279.050 1.00 0.60 ? 414 CYS zf2 O   1 zf2 O   CYS 414 
+ATOM 208 C CB  . CYS zf2 1 26 ? 357.486 333.897 280.020 1.00 0.60 ? 414 CYS zf2 CB  1 zf2 CB  CYS 414 
+ATOM 209 S SG  . CYS zf2 1 26 ? 358.746 335.194 280.085 1.00 0.60 ? 414 CYS zf2 SG  1 zf2 SG  CYS 414 
+ATOM 210 N N   . ARG zf2 1 27 ? 356.495 331.177 281.239 1.00 0.49 ? 415 ARG zf2 N   1 zf2 N   ARG 415 
+ATOM 211 C CA  . ARG zf2 1 27 ? 355.486 330.158 281.424 1.00 0.49 ? 415 ARG zf2 CA  1 zf2 CA  ARG 415 
+ATOM 212 C C   . ARG zf2 1 27 ? 354.393 330.760 282.243 1.00 0.49 ? 415 ARG zf2 C   1 zf2 C   ARG 415 
+ATOM 213 O O   . ARG zf2 1 27 ? 354.615 331.133 283.388 1.00 0.49 ? 415 ARG zf2 O   1 zf2 O   ARG 415 
+ATOM 214 C CB  . ARG zf2 1 27 ? 356.079 328.955 282.195 1.00 0.49 ? 415 ARG zf2 CB  1 zf2 CB  ARG 415 
+ATOM 215 C CG  . ARG zf2 1 27 ? 357.162 328.213 281.382 1.00 0.49 ? 415 ARG zf2 CG  1 zf2 CG  ARG 415 
+ATOM 216 C CD  . ARG zf2 1 27 ? 358.124 327.431 282.275 1.00 0.49 ? 415 ARG zf2 CD  1 zf2 CD  ARG 415 
+ATOM 217 N NE  . ARG zf2 1 27 ? 359.071 326.662 281.391 1.00 0.49 ? 415 ARG zf2 NE  1 zf2 NE  ARG 415 
+ATOM 218 C CZ  . ARG zf2 1 27 ? 360.124 325.940 281.793 1.00 0.49 ? 415 ARG zf2 CZ  1 zf2 CZ  ARG 415 
+ATOM 219 N NH1 . ARG zf2 1 27 ? 360.885 325.307 280.897 1.00 0.49 ? 415 ARG zf2 NH1 1 zf2 NH1 ARG 415 
+ATOM 220 N NH2 . ARG zf2 1 27 ? 360.487 325.838 283.077 1.00 0.49 ? 415 ARG zf2 NH2 1 zf2 NH2 ARG 415 
+ATOM 221 N N   . LEU zf2 1 28 ? 353.172 330.863 281.704 1.00 0.58 ? 416 LEU zf2 N   1 zf2 N   LEU 416 
+ATOM 222 C CA  . LEU zf2 1 28 ? 352.057 331.272 282.498 1.00 0.58 ? 416 LEU zf2 CA  1 zf2 CA  LEU 416 
+ATOM 223 C C   . LEU zf2 1 28 ? 351.023 330.221 282.509 1.00 0.58 ? 416 LEU zf2 C   1 zf2 C   LEU 416 
+ATOM 224 O O   . LEU zf2 1 28 ? 350.770 329.525 281.557 1.00 0.58 ? 416 LEU zf2 O   1 zf2 O   LEU 416 
+ATOM 225 C CB  . LEU zf2 1 28 ? 351.351 332.491 281.968 1.00 0.58 ? 416 LEU zf2 CB  1 zf2 CB  LEU 416 
+ATOM 226 C CG  . LEU zf2 1 28 ? 352.234 333.681 282.059 1.00 0.58 ? 416 LEU zf2 CG  1 zf2 CG  LEU 416 
+ATOM 227 C CD1 . LEU zf2 1 28 ? 351.350 334.850 281.764 1.00 0.58 ? 416 LEU zf2 CD1 1 zf2 CD1 LEU 416 
+ATOM 228 C CD2 . LEU zf2 1 28 ? 352.913 333.984 283.348 1.00 0.58 ? 416 LEU zf2 CD2 1 zf2 CD2 LEU 416 
+ATOM 229 N N   . CYS zf2 1 29 ? 350.351 330.099 283.652 1.00 0.65 ? 417 CYS zf2 N   1 zf2 N   CYS 417 
+ATOM 230 C CA  . CYS zf2 1 29 ? 349.154 329.320 283.750 1.00 0.65 ? 417 CYS zf2 CA  1 zf2 CA  CYS 417 
+ATOM 231 C C   . CYS zf2 1 29 ? 348.087 329.743 282.726 1.00 0.65 ? 417 CYS zf2 C   1 zf2 C   CYS 417 
+ATOM 232 O O   . CYS zf2 1 29 ? 347.884 330.928 282.481 1.00 0.65 ? 417 CYS zf2 O   1 zf2 O   CYS 417 
+ATOM 233 C CB  . CYS zf2 1 29 ? 348.654 329.348 285.223 1.00 0.65 ? 417 CYS zf2 CB  1 zf2 CB  CYS 417 
+ATOM 234 S SG  . CYS zf2 1 29 ? 347.713 330.800 285.752 1.00 0.65 ? 417 CYS zf2 SG  1 zf2 SG  CYS 417 
+ATOM 235 N N   . ALA zf2 1 30 ? 347.364 328.789 282.102 1.00 0.67 ? 418 ALA zf2 N   1 zf2 N   ALA 418 
+ATOM 236 C CA  . ALA zf2 1 30 ? 346.336 329.063 281.113 1.00 0.67 ? 418 ALA zf2 CA  1 zf2 CA  ALA 418 
+ATOM 237 C C   . ALA zf2 1 30 ? 345.262 330.040 281.544 1.00 0.67 ? 418 ALA zf2 C   1 zf2 C   ALA 418 
+ATOM 238 O O   . ALA zf2 1 30 ? 344.785 330.854 280.776 1.00 0.67 ? 418 ALA zf2 O   1 zf2 O   ALA 418 
+ATOM 239 C CB  . ALA zf2 1 30 ? 345.637 327.754 280.743 1.00 0.67 ? 418 ALA zf2 CB  1 zf2 CB  ALA 418 
+ATOM 240 N N   . SER zf2 1 31 ? 344.898 330.014 282.837 1.00 0.63 ? 419 SER zf2 N   1 zf2 N   SER 419 
+ATOM 241 C CA  . SER zf2 1 31 ? 343.995 330.962 283.456 1.00 0.63 ? 419 SER zf2 CA  1 zf2 CA  SER 419 
+ATOM 242 C C   . SER zf2 1 31 ? 344.406 332.418 283.321 1.00 0.63 ? 419 SER zf2 C   1 zf2 C   SER 419 
+ATOM 243 O O   . SER zf2 1 31 ? 343.570 333.301 283.186 1.00 0.63 ? 419 SER zf2 O   1 zf2 O   SER 419 
+ATOM 244 C CB  . SER zf2 1 31 ? 343.910 330.719 284.976 1.00 0.63 ? 419 SER zf2 CB  1 zf2 CB  SER 419 
+ATOM 245 O OG  . SER zf2 1 31 ? 343.420 329.409 285.236 1.00 0.63 ? 419 SER zf2 OG  1 zf2 OG  SER 419 
+ATOM 246 N N   . CYS zf2 1 32 ? 345.730 332.690 283.416 1.00 0.64 ? 420 CYS zf2 N   1 zf2 N   CYS 420 
+ATOM 247 C CA  . CYS zf2 1 32 ? 346.310 333.983 283.119 1.00 0.64 ? 420 CYS zf2 CA  1 zf2 CA  CYS 420 
+ATOM 248 C C   . CYS zf2 1 32 ? 346.230 334.339 281.665 1.00 0.64 ? 420 CYS zf2 C   1 zf2 C   CYS 420 
+ATOM 249 O O   . CYS zf2 1 32 ? 345.788 335.430 281.362 1.00 0.64 ? 420 CYS zf2 O   1 zf2 O   CYS 420 
+ATOM 250 C CB  . CYS zf2 1 32 ? 347.779 334.083 283.581 1.00 0.64 ? 420 CYS zf2 CB  1 zf2 CB  CYS 420 
+ATOM 251 S SG  . CYS zf2 1 32 ? 347.838 334.214 285.379 1.00 0.64 ? 420 CYS zf2 SG  1 zf2 SG  CYS 420 
+ATOM 252 N N   . TRP zf2 1 33 ? 346.565 333.424 280.732 1.00 0.52 ? 421 TRP zf2 N   1 zf2 N   TRP 421 
+ATOM 253 C CA  . TRP zf2 1 33 ? 346.420 333.640 279.302 1.00 0.52 ? 421 TRP zf2 CA  1 zf2 CA  TRP 421 
+ATOM 254 C C   . TRP zf2 1 33 ? 344.963 333.929 278.903 1.00 0.52 ? 421 TRP zf2 C   1 zf2 C   TRP 421 
+ATOM 255 O O   . TRP zf2 1 33 ? 344.671 334.858 278.156 1.00 0.52 ? 421 TRP zf2 O   1 zf2 O   TRP 421 
+ATOM 256 C CB  . TRP zf2 1 33 ? 346.990 332.400 278.555 1.00 0.52 ? 421 TRP zf2 CB  1 zf2 CB  TRP 421 
+ATOM 257 C CG  . TRP zf2 1 33 ? 346.701 332.336 277.064 1.00 0.52 ? 421 TRP zf2 CG  1 zf2 CG  TRP 421 
+ATOM 258 C CD1 . TRP zf2 1 33 ? 347.041 333.225 276.086 1.00 0.52 ? 421 TRP zf2 CD1 1 zf2 CD1 TRP 421 
+ATOM 259 C CD2 . TRP zf2 1 33 ? 345.907 331.319 276.432 1.00 0.52 ? 421 TRP zf2 CD2 1 zf2 CD2 TRP 421 
+ATOM 260 N NE1 . TRP zf2 1 33 ? 346.535 332.817 274.871 1.00 0.52 ? 421 TRP zf2 NE1 1 zf2 NE1 TRP 421 
+ATOM 261 C CE2 . TRP zf2 1 33 ? 345.840 331.643 275.062 1.00 0.52 ? 421 TRP zf2 CE2 1 zf2 CE2 TRP 421 
+ATOM 262 C CE3 . TRP zf2 1 33 ? 345.263 330.191 276.935 1.00 0.52 ? 421 TRP zf2 CE3 1 zf2 CE3 TRP 421 
+ATOM 263 C CZ2 . TRP zf2 1 33 ? 345.156 330.827 274.171 1.00 0.52 ? 421 TRP zf2 CZ2 1 zf2 CZ2 TRP 421 
+ATOM 264 C CZ3 . TRP zf2 1 33 ? 344.560 329.378 276.037 1.00 0.52 ? 421 TRP zf2 CZ3 1 zf2 CZ3 TRP 421 
+ATOM 265 C CH2 . TRP zf2 1 33 ? 344.517 329.682 274.671 1.00 0.52 ? 421 TRP zf2 CH2 1 zf2 CH2 TRP 421 
+ATOM 266 N N   . THR zf2 1 34 ? 344.007 333.150 279.452 1.00 0.62 ? 422 THR zf2 N   1 zf2 N   THR 422 
+ATOM 267 C CA  . THR zf2 1 34 ? 342.582 333.266 279.163 1.00 0.62 ? 422 THR zf2 CA  1 zf2 CA  THR 422 
+ATOM 268 C C   . THR zf2 1 34 ? 341.934 334.563 279.608 1.00 0.62 ? 422 THR zf2 C   1 zf2 C   THR 422 
+ATOM 269 O O   . THR zf2 1 34 ? 341.239 335.213 278.861 1.00 0.62 ? 422 THR zf2 O   1 zf2 O   THR 422 
+ATOM 270 C CB  . THR zf2 1 34 ? 341.755 332.174 279.820 1.00 0.62 ? 422 THR zf2 CB  1 zf2 CB  THR 422 
+ATOM 271 O OG1 . THR zf2 1 34 ? 342.091 330.918 279.260 1.00 0.62 ? 422 THR zf2 OG1 1 zf2 OG1 THR 422 
+ATOM 272 C CG2 . THR zf2 1 34 ? 340.246 332.342 279.574 1.00 0.62 ? 422 THR zf2 CG2 1 zf2 CG2 THR 422 
+ATOM 273 N N   . TYR zf2 1 35 ? 342.158 334.961 280.897 1.00 0.56 ? 423 TYR zf2 N   1 zf2 N   TYR 423 
+ATOM 274 C CA  . TYR zf2 1 35 ? 341.731 336.253 281.421 1.00 0.56 ? 423 TYR zf2 CA  1 zf2 CA  TYR 423 
+ATOM 275 C C   . TYR zf2 1 35 ? 342.488 337.366 280.754 1.00 0.56 ? 423 TYR zf2 C   1 zf2 C   TYR 423 
+ATOM 276 O O   . TYR zf2 1 35 ? 341.903 338.398 280.450 1.00 0.56 ? 423 TYR zf2 O   1 zf2 O   TYR 423 
+ATOM 277 C CB  . TYR zf2 1 35 ? 341.833 336.378 282.985 1.00 0.56 ? 423 TYR zf2 CB  1 zf2 CB  TYR 423 
+ATOM 278 C CG  . TYR zf2 1 35 ? 341.441 337.758 283.542 1.00 0.56 ? 423 TYR zf2 CG  1 zf2 CG  TYR 423 
+ATOM 279 C CD1 . TYR zf2 1 35 ? 342.277 338.881 283.352 1.00 0.56 ? 423 TYR zf2 CD1 1 zf2 CD1 TYR 423 
+ATOM 280 C CD2 . TYR zf2 1 35 ? 340.233 337.970 284.235 1.00 0.56 ? 423 TYR zf2 CD2 1 zf2 CD2 TYR 423 
+ATOM 281 C CE1 . TYR zf2 1 35 ? 341.847 340.174 283.676 1.00 0.56 ? 423 TYR zf2 CE1 1 zf2 CE1 TYR 423 
+ATOM 282 C CE2 . TYR zf2 1 35 ? 339.850 339.257 284.660 1.00 0.56 ? 423 TYR zf2 CE2 1 zf2 CE2 TYR 423 
+ATOM 283 C CZ  . TYR zf2 1 35 ? 340.647 340.363 284.351 1.00 0.56 ? 423 TYR zf2 CZ  1 zf2 CZ  TYR 423 
+ATOM 284 O OH  . TYR zf2 1 35 ? 340.284 341.678 284.708 1.00 0.56 ? 423 TYR zf2 OH  1 zf2 OH  TYR 423 
+ATOM 285 N N   . TRP zf2 1 36 ? 343.796 337.195 280.482 1.00 0.48 ? 424 TRP zf2 N   1 zf2 N   TRP 424 
+ATOM 286 C CA  . TRP zf2 1 36 ? 344.569 338.193 279.781 1.00 0.48 ? 424 TRP zf2 CA  1 zf2 CA  TRP 424 
+ATOM 287 C C   . TRP zf2 1 36 ? 343.971 338.501 278.429 1.00 0.48 ? 424 TRP zf2 C   1 zf2 C   TRP 424 
+ATOM 288 O O   . TRP zf2 1 36 ? 343.888 339.646 278.040 1.00 0.48 ? 424 TRP zf2 O   1 zf2 O   TRP 424 
+ATOM 289 C CB  . TRP zf2 1 36 ? 346.046 337.763 279.631 1.00 0.48 ? 424 TRP zf2 CB  1 zf2 CB  TRP 424 
+ATOM 290 C CG  . TRP zf2 1 36 ? 346.951 338.738 278.925 1.00 0.48 ? 424 TRP zf2 CG  1 zf2 CG  TRP 424 
+ATOM 291 C CD1 . TRP zf2 1 36 ? 347.686 339.760 279.448 1.00 0.48 ? 424 TRP zf2 CD1 1 zf2 CD1 TRP 424 
+ATOM 292 C CD2 . TRP zf2 1 36 ? 347.149 338.770 277.505 1.00 0.48 ? 424 TRP zf2 CD2 1 zf2 CD2 TRP 424 
+ATOM 293 N NE1 . TRP zf2 1 36 ? 348.350 340.429 278.445 1.00 0.48 ? 424 TRP zf2 NE1 1 zf2 NE1 TRP 424 
+ATOM 294 C CE2 . TRP zf2 1 36 ? 348.025 339.840 277.243 1.00 0.48 ? 424 TRP zf2 CE2 1 zf2 CE2 TRP 424 
+ATOM 295 C CE3 . TRP zf2 1 36 ? 346.639 337.985 276.474 1.00 0.48 ? 424 TRP zf2 CE3 1 zf2 CE3 TRP 424 
+ATOM 296 C CZ2 . TRP zf2 1 36 ? 348.413 340.134 275.945 1.00 0.48 ? 424 TRP zf2 CZ2 1 zf2 CZ2 TRP 424 
+ATOM 297 C CZ3 . TRP zf2 1 36 ? 347.012 338.298 275.162 1.00 0.48 ? 424 TRP zf2 CZ3 1 zf2 CZ3 TRP 424 
+ATOM 298 C CH2 . TRP zf2 1 36 ? 347.896 339.353 274.900 1.00 0.48 ? 424 TRP zf2 CH2 1 zf2 CH2 TRP 424 
+ATOM 299 N N   . LYS zf2 1 37 ? 343.459 337.511 277.688 1.00 0.56 ? 425 LYS zf2 N   1 zf2 N   LYS 425 
+ATOM 300 C CA  . LYS zf2 1 37 ? 342.701 337.828 276.502 1.00 0.56 ? 425 LYS zf2 CA  1 zf2 CA  LYS 425 
+ATOM 301 C C   . LYS zf2 1 37 ? 341.428 338.661 276.739 1.00 0.56 ? 425 LYS zf2 C   1 zf2 C   LYS 425 
+ATOM 302 O O   . LYS zf2 1 37 ? 341.078 339.491 275.905 1.00 0.56 ? 425 LYS zf2 O   1 zf2 O   LYS 425 
+ATOM 303 C CB  . LYS zf2 1 37 ? 342.425 336.529 275.716 1.00 0.56 ? 425 LYS zf2 CB  1 zf2 CB  LYS 425 
+ATOM 304 C CG  . LYS zf2 1 37 ? 341.066 336.483 275.001 1.00 0.56 ? 425 LYS zf2 CG  1 zf2 CG  LYS 425 
+ATOM 305 C CD  . LYS zf2 1 37 ? 340.957 335.289 274.057 1.00 0.56 ? 425 LYS zf2 CD  1 zf2 CD  LYS 425 
+ATOM 306 C CE  . LYS zf2 1 37 ? 339.831 334.329 274.430 1.00 0.56 ? 425 LYS zf2 CE  1 zf2 CE  LYS 425 
+ATOM 307 N NZ  . LYS zf2 1 37 ? 338.588 334.743 273.743 1.00 0.56 ? 425 LYS zf2 NZ  1 zf2 NZ  LYS 425 
+ATOM 308 N N   . LYS zf2 1 38 ? 340.697 338.449 277.860 1.00 0.52 ? 426 LYS zf2 N   1 zf2 N   LYS 426 
+ATOM 309 C CA  . LYS zf2 1 38 ? 339.458 339.156 278.171 1.00 0.52 ? 426 LYS zf2 CA  1 zf2 CA  LYS 426 
+ATOM 310 C C   . LYS zf2 1 38 ? 339.605 340.665 278.317 1.00 0.52 ? 426 LYS zf2 C   1 zf2 C   LYS 426 
+ATOM 311 O O   . LYS zf2 1 38 ? 338.934 341.418 277.620 1.00 0.52 ? 426 LYS zf2 O   1 zf2 O   LYS 426 
+ATOM 312 C CB  . LYS zf2 1 38 ? 338.816 338.639 279.490 1.00 0.52 ? 426 LYS zf2 CB  1 zf2 CB  LYS 426 
+ATOM 313 C CG  . LYS zf2 1 38 ? 338.349 337.178 279.457 1.00 0.52 ? 426 LYS zf2 CG  1 zf2 CG  LYS 426 
+ATOM 314 C CD  . LYS zf2 1 38 ? 337.830 336.716 280.831 1.00 0.52 ? 426 LYS zf2 CD  1 zf2 CD  LYS 426 
+ATOM 315 C CE  . LYS zf2 1 38 ? 337.340 335.264 280.827 1.00 0.52 ? 426 LYS zf2 CE  1 zf2 CE  LYS 426 
+ATOM 316 N NZ  . LYS zf2 1 38 ? 336.898 334.847 282.178 1.00 0.52 ? 426 LYS zf2 NZ  1 zf2 NZ  LYS 426 
+ATOM 317 N N   . TYR zf2 1 39 ? 340.502 341.129 279.213 1.00 0.41 ? 427 TYR zf2 N   1 zf2 N   TYR 427 
+ATOM 318 C CA  . TYR zf2 1 39 ? 340.686 342.556 279.436 1.00 0.41 ? 427 TYR zf2 CA  1 zf2 CA  TYR 427 
+ATOM 319 C C   . TYR zf2 1 39 ? 341.997 343.088 278.873 1.00 0.41 ? 427 TYR zf2 C   1 zf2 C   TYR 427 
+ATOM 320 O O   . TYR zf2 1 39 ? 342.167 344.297 278.757 1.00 0.41 ? 427 TYR zf2 O   1 zf2 O   TYR 427 
+ATOM 321 C CB  . TYR zf2 1 39 ? 340.676 342.906 280.950 1.00 0.41 ? 427 TYR zf2 CB  1 zf2 CB  TYR 427 
+ATOM 322 C CG  . TYR zf2 1 39 ? 339.278 342.946 281.492 1.00 0.41 ? 427 TYR zf2 CG  1 zf2 CG  TYR 427 
+ATOM 323 C CD1 . TYR zf2 1 39 ? 338.624 341.777 281.897 1.00 0.41 ? 427 TYR zf2 CD1 1 zf2 CD1 TYR 427 
+ATOM 324 C CD2 . TYR zf2 1 39 ? 338.619 344.179 281.634 1.00 0.41 ? 427 TYR zf2 CD2 1 zf2 CD2 TYR 427 
+ATOM 325 C CE1 . TYR zf2 1 39 ? 337.332 341.836 282.440 1.00 0.41 ? 427 TYR zf2 CE1 1 zf2 CE1 TYR 427 
+ATOM 326 C CE2 . TYR zf2 1 39 ? 337.330 344.241 282.178 1.00 0.41 ? 427 TYR zf2 CE2 1 zf2 CE2 TYR 427 
+ATOM 327 C CZ  . TYR zf2 1 39 ? 336.688 343.067 282.582 1.00 0.41 ? 427 TYR zf2 CZ  1 zf2 CZ  TYR 427 
+ATOM 328 O OH  . TYR zf2 1 39 ? 335.403 343.109 283.152 1.00 0.41 ? 427 TYR zf2 OH  1 zf2 OH  TYR 427 
+ATOM 329 N N   . GLY zf2 1 40 ? 342.958 342.219 278.497 1.00 0.64 ? 428 GLY zf2 N   1 zf2 N   GLY 428 
+ATOM 330 C CA  . GLY zf2 1 40 ? 344.270 342.625 277.982 1.00 0.64 ? 428 GLY zf2 CA  1 zf2 CA  GLY 428 
+ATOM 331 C C   . GLY zf2 1 40 ? 345.207 343.252 278.971 1.00 0.64 ? 428 GLY zf2 C   1 zf2 C   GLY 428 
+ATOM 332 O O   . GLY zf2 1 40 ? 346.060 344.058 278.614 1.00 0.64 ? 428 GLY zf2 O   1 zf2 O   GLY 428 
+ATOM 333 N N   . GLY zf2 1 41 ? 345.075 342.882 280.258 1.00 0.60 ? 429 GLY zf2 N   1 zf2 N   GLY 429 
+ATOM 334 C CA  . GLY zf2 1 41 ? 345.840 343.469 281.343 1.00 0.60 ? 429 GLY zf2 CA  1 zf2 CA  GLY 429 
+ATOM 335 C C   . GLY zf2 1 41 ? 346.476 342.441 282.231 1.00 0.60 ? 429 GLY zf2 C   1 zf2 C   GLY 429 
+ATOM 336 O O   . GLY zf2 1 41 ? 346.258 341.241 282.091 1.00 0.60 ? 429 GLY zf2 O   1 zf2 O   GLY 429 
+ATOM 337 N N   . LEU zf2 1 42 ? 347.283 342.919 283.198 1.00 0.46 ? 430 LEU zf2 N   1 zf2 N   LEU 430 
+ATOM 338 C CA  . LEU zf2 1 42 ? 348.005 342.093 284.147 1.00 0.46 ? 430 LEU zf2 CA  1 zf2 CA  LEU 430 
+ATOM 339 C C   . LEU zf2 1 42 ? 347.084 341.625 285.276 1.00 0.46 ? 430 LEU zf2 C   1 zf2 C   LEU 430 
+ATOM 340 O O   . LEU zf2 1 42 ? 346.360 342.427 285.862 1.00 0.46 ? 430 LEU zf2 O   1 zf2 O   LEU 430 
+ATOM 341 C CB  . LEU zf2 1 42 ? 349.236 342.872 284.685 1.00 0.46 ? 430 LEU zf2 CB  1 zf2 CB  LEU 430 
+ATOM 342 C CG  . LEU zf2 1 42 ? 350.185 342.078 285.608 1.00 0.46 ? 430 LEU zf2 CG  1 zf2 CG  LEU 430 
+ATOM 343 C CD1 . LEU zf2 1 42 ? 350.850 340.882 284.905 1.00 0.46 ? 430 LEU zf2 CD1 1 zf2 CD1 LEU 430 
+ATOM 344 C CD2 . LEU zf2 1 42 ? 351.262 343.004 286.198 1.00 0.46 ? 430 LEU zf2 CD2 1 zf2 CD2 LEU 430 
+ATOM 345 N N   . LYS zf2 1 43 ? 347.076 340.299 285.533 1.00 0.50 ? 431 LYS zf2 N   1 zf2 N   LYS 431 
+ATOM 346 C CA  . LYS zf2 1 43 ? 346.330 339.637 286.587 1.00 0.50 ? 431 LYS zf2 CA  1 zf2 CA  LYS 431 
+ATOM 347 C C   . LYS zf2 1 43 ? 347.071 339.700 287.957 1.00 0.50 ? 431 LYS zf2 C   1 zf2 C   LYS 431 
+ATOM 348 O O   . LYS zf2 1 43 ? 348.273 340.080 287.981 1.00 0.50 ? 431 LYS zf2 O   1 zf2 O   LYS 431 
+ATOM 349 C CB  . LYS zf2 1 43 ? 346.066 338.164 286.143 1.00 0.50 ? 431 LYS zf2 CB  1 zf2 CB  LYS 431 
+ATOM 350 C CG  . LYS zf2 1 43 ? 345.141 337.376 287.082 1.00 0.50 ? 431 LYS zf2 CG  1 zf2 CG  LYS 431 
+ATOM 351 C CD  . LYS zf2 1 43 ? 344.833 335.960 286.590 1.00 0.50 ? 431 LYS zf2 CD  1 zf2 CD  LYS 431 
+ATOM 352 C CE  . LYS zf2 1 43 ? 343.989 335.179 287.589 1.00 0.50 ? 431 LYS zf2 CE  1 zf2 CE  LYS 431 
+ATOM 353 N NZ  . LYS zf2 1 43 ? 343.778 333.818 287.066 1.00 0.50 ? 431 LYS zf2 NZ  1 zf2 NZ  LYS 431 
+ATOM 354 O OXT . LYS zf2 1 43 ? 346.426 339.380 288.995 1.00 0.50 ? 431 LYS zf2 OXT 1 zf2 OXT LYS 431 
+#
