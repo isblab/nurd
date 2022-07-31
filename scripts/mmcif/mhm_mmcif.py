@@ -286,8 +286,8 @@ xlr_intra_bs3dss = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryR
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,           # This adds a linear term to the scoring function
                 label="intra_bs3dss",                        #   to bias crosslinks towards each other
-                weight=intra_xl_weight)       # Scaling factor for the restraint score.
-
+                weight=intra_xl_weight,       # Scaling factor for the restraint score.
+                linker=ihm.cross_linkers.bs3)
 
 # xldb_intra_dmtmm = IMP.pmi.io.crosslink.CrossLinkDataBase()
 # xldb_intra_dmtmm.create_set_from_file(file_name=intra_dmtmm_xl_data,
@@ -326,8 +326,8 @@ xlr_inter_bs3dss = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryR
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,           # This adds a linear term to the scoring function
                 label="inter_bs3dss",                        #   to bias crosslinks towards each other
-                weight=inter_xl_weight)       # Scaling factor for the restraint score.
-
+                weight=inter_xl_weight,       # Scaling factor for the restraint score.
+                linker=ihm.cross_linkers.bs3)
 
 # xldb_inter_dmtmm = IMP.pmi.io.crosslink.CrossLinkDataBase()
 # xldb_inter_dmtmm.create_set_from_file(file_name=inter_dmtmm_xl_data,

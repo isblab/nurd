@@ -42823,7 +42823,7 @@ _ihm_ensemble_info.ensemble_file_id
 _ihm_ensemble_info.details
 _ihm_ensemble_info.sub_sample_flag
 _ihm_ensemble_info.sub_sampling_type
-1 'Cluster 0' 1 1 'Density based threshold-clustering' RMSD 18239 1 34 . . NO .
+1 'Cluster 0' 1 1 'Other' RMSD 18239 1 34 . 'Density based threshold-clustering' NO .
 #
 #
 loop_
