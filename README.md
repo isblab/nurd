@@ -117,4 +117,4 @@ International License.\
 **Last known good IMP version:** [![build info](https://integrativemodeling.org/systems/41/badge.svg?branch=main)](https://integrativemodeling.org/systems/) \
 **Testable:** Yes\
 **Parallelizeable:** Yes\
-**Publications:** Shreyas Arvindekar, Matthew J. Jackman, Jason K.K. Low, Michael J. Landsberg, Joel P. Mackay, Shruthi Viswanath. "Molecular architecture of nucleosome remodeling and deacetylase sub-complexes by integrative structure determination." Protein Science, in Press (2022) ([bioRxiv](https://doi.org/10.1101/2021.11.25.469965))
+**Publications:**  Arvindekar, S, Jackman, MJ, Low, JKK, Landsberg, MJ, Mackay, JP, Viswanath, S. Molecular architecture of nucleosome remodeling and deacetylase sub-complexes by integrative structure determination. Protein Science. 2022; 31( 9):e4387. DOI: [10.1002/pro.4387](https://doi.org/10.1002/pro.4387).
