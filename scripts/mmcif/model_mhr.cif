@@ -104,7 +104,7 @@ O=C(NN)CCCCC(=O)NN .
 C1C(C(=O)N(C1=O)OC(=O)CCCCCCC(=O)ON2C(=O)CC(C2=O)S(=O)(=O)O)S(=O)(=O)O .
 1S/C16H20N2O14S2/c19-11-7-9(33(25,26)27)15(23)17(11)31-13(21)5-3-1-2-4-6-14(22)32-18-12(20)8-10(16(18)24)34(28,29)30/h9-10H,1-8H2,(H,25,26,27)(H,28,29,30)
 VYLDEYYOISNGST-UHFFFAOYSA-N
-3 DMTMM '4-(4,6-Dimethoxy-1,3,5-triazin-2-yl)-4-methylmorpholin-4-ium chloride' DMTMM
+3 Other '4-(4,6-Dimethoxy-1,3,5-triazin-2-yl)-4-methylmorpholin-4-ium chloride' DMTMM
 C[N+]1(CCOCC1)C2=NC(=NC(=N2)OC)OC.[Cl-] .
 1S/C10H17N4O3.ClH/c1-14(4-6-17-7-5-14)8-11-9(15-2)13-10(12-8)16-3;/h4-7H2,1-3H3;1H/q+1;/p-1 BMTZEAOGFDXDAD-UHFFFAOYSA-M
 #
@@ -40063,7 +40063,6 @@ _ihm_ensemble_info.details
 _ihm_ensemble_info.sub_sample_flag
 _ihm_ensemble_info.sub_sampling_type
 1 'Cluster 0' 1 1 'Other' RMSD 12913 1 27 . 'Density based threshold-clustering' NO .
-1 'Cluster 0' 1 1 'Other' RMSD 18239 1 34 . 'Density based threshold-clustering' NO .
 #
 #
 loop_
