@@ -6,7 +6,7 @@
 
 This repository is of the integrative model of the NuRD subcomplexes based on data from negative stain EM, chemical crosslinking, X-ray crystallography, DIA-MS, SEC-MALLS and [COSMIC](https://cancer.sanger.ac.uk/cosmic) (*Cancer Mutations Database*). It contains input data, scripts for modeling and results including bead models and localization probability density maps. The modeling was performed using [IMP](https://integrativemodeling.org) (*Integrative Modeling Platform*).
 
-These integrative structures were deposited in the PDB-Dev database with accession codes [PDBDEV_00000152 (MHM)](https://pdb-dev.wwpdb.org/entry.html?PDBDEV_00000152), [PDBDEV_00000154 (MHR)](https://pdb-dev.wwpdb.org/entry.html?PDBDEV_00000154), and [PDBDEV_00000155 (NuDe)](https://pdb-dev.wwpdb.org/entry.html?PDBDEV_00000155). The negative-stain EM map used for modeling MHR was deposited in the EMDB database with accession code [27557](https://www.ebi.ac.uk/emdb/EMD-27557).
+These integrative structures were deposited in the PDB-Dev database with accession codes [PDBDEV_00000152 (MHM)](https://pdb-dev.wwpdb.org/entry.html?PDBDEV_00000152), [PDBDEV_00000154 (MHR)](https://pdb-dev.wwpdb.org/entry.html?PDBDEV_00000154), and [PDBDEV_00000155 (NuDe)](https://pdb-dev.wwpdb.org/entry.html?PDBDEV_00000155). The negative-stain EM map used for modeling MHR was deposited in the EMDB database with accession code [EMD-27557](https://www.ebi.ac.uk/emdb/EMD-27557).
 
 ![four_stage_figure](https://user-images.githubusercontent.com/8314735/165240737-c960c153-6af9-4014-9d76-32bc8c01cd03.png)
 
