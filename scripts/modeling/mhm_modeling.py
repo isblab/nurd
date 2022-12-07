@@ -406,8 +406,6 @@ print("Replica Exchange Maximum Temperature : " + str(rex_max_temp))
 # Run replica exchange Monte Carlo sampling
 rex=IMP.pmi.macros.ReplicaExchange0(mdl,
         root_hier=root_hier,                    # pass the root hierarchy
-        crosslink_restraints=[xlr_intra_bs3dss, xlr_inter_bs3dss],
-        # This allows viewing the crosslinks in Chimera. Also, there is not inter-protein ADH crosslink available. Hence it is not mentioned in this list
         monte_carlo_temperature = 1.0,
         replica_exchange_minimum_temperature = 1.0,
         replica_exchange_maximum_temperature = rex_max_temp,

@@ -280,7 +280,6 @@ print("Replica Exchange Maximum Temperature : " + str(rex_max_temp))
 # Run replica exchange Monte Carlo sampling
 rex=IMP.pmi.macros.ReplicaExchange0(mdl,
         root_hier=root_hier,                    # pass the root hierarchy
-        crosslink_restraints=[xlr_adh,xlr_bs3dss,xlr_dmtmm],         # This allows viewing the crosslinks in Chimera
         monte_carlo_temperature = 1.0,
         replica_exchange_minimum_temperature = 1.0,
         replica_exchange_maximum_temperature = rex_max_temp,
