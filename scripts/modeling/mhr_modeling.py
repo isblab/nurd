@@ -23,6 +23,7 @@ import IMP.pmi.restraints.em
 import IMP.pmi.dof
 import IMP.atom
 #import IMP.saxs
+import ihm.cross_linkers
 
 import sys
 
@@ -213,7 +214,8 @@ xlr_adh = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,          # This adds a linear term to the scoring function
                 label="adh",                        #   to bias crosslinks towards each other
-                weight=xl_weight)       # Scaling factor for the restraint score.
+                weight=xl_weight,       # Scaling factor for the restraint score.
+                linker=ihm.cross_linkers.edc)
 
 xldb_bs3dss = IMP.pmi.io.crosslink.CrossLinkDataBase()
 xldb_bs3dss.create_set_from_file(file_name=bs3dss_xl_data,
@@ -225,7 +227,8 @@ xlr_bs3dss = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestrai
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,           # This adds a linear term to the scoring function
                 label="bs3dss",                        #   to bias crosslinks towards each other
-                weight=xl_weight)       # Scaling factor for the restraint score.
+                weight=xl_weight,       # Scaling factor for the restraint score.
+                linker=ihm.cross_linkers.bs3)
 
 
 xldb_dmtmm = IMP.pmi.io.crosslink.CrossLinkDataBase()
@@ -238,7 +241,8 @@ xlr_dmtmm = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestrain
                 resolution=1,           # The resolution at which to evaluate the crosslink
                 slope=0.0001,           # This adds a linear term to the scoring function
                 label="dmtmm",                        #   to bias crosslinks towards each other
-                weight=xl_weight)       # Scaling factor for the restraint score.
+                weight=xl_weight,       # Scaling factor for the restraint score.
+                linker=ihm.cross_linkers.dss)
 
 
 
