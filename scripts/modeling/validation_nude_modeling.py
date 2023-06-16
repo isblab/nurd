@@ -456,7 +456,7 @@ xlr_dmtmm.add_to_model()
 print("Replica Exchange Maximum Temperature : " + str(rex_max_temp))
 
 # Run replica exchange Monte Carlo sampling
-rex=IMP.pmi.macros.ReplicaExchange0(mdl,
+rex=IMP.pmi.macros.ReplicaExchange(mdl,
         root_hier=root_hier,                    # pass the root hierarchy
         monte_carlo_temperature = 1.0,
         replica_exchange_minimum_temperature = 1.0,
